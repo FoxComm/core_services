@@ -1,0 +1,19 @@
+[Unit]
+Description=user
+After=docker.service
+Requires=docker.service
+
+[Service]
+EnvironmentFile=/etc/environment
+User=core
+TimeoutStartSec=60
+ExecStartPre=-/usr/bin/docker kill user-%i
+ExecStartPre=-/usr/bin/docker rm user-%i
+ExecStartPre=/usr/bin/docker pull quay.io/foxcomm/user:$VERSION$
+ExecStart=/bin/sh -c "IMAGE_ID=`/usr/bin/docker images | grep user | grep $VERSION$ | awk '{print $3}'` && /usr/bin/docker run --name=user-%i -p 0.0.0.0:1500%i:1500%i --env PORT=1500%i --env PRIVATE_IPV4=$COREOS_PRIVATE_IPV4 --env EtcdHost=$COREOS_PRIVATE_IPV4 --env EtcdPort=4001 --env FC_ENV=production $IMAGE_ID"
+ExecStop=/usr/bin/docker kill user-%i
+ExecStopPost=/bin/sh -c "/usr/bin/etcdctl rm /endpoints/user/$COREOS_PRIVATE_IPV4:1500%i"
+Restart=on-failure
+
+[X-Fleet]
+Conflicts=user*
