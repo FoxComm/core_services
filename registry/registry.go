@@ -13,11 +13,11 @@ import (
 
 	"github.com/FoxComm/vulcand/plugin/trace"
 
-	"github.com/FoxComm/FoxComm/router/plugins/feature_validator"
-	"github.com/FoxComm/FoxComm/router/plugins/health_check"
-	"github.com/FoxComm/FoxComm/router/plugins/recover_middleware"
-	"github.com/FoxComm/FoxComm/router/plugins/session"
-	"github.com/FoxComm/FoxComm/router/plugins/site_activity"
+	"github.com/FoxComm/router/plugins/feature_validator"
+	"github.com/FoxComm/router/plugins/health_check"
+	"github.com/FoxComm/router/plugins/recover_middleware"
+	"github.com/FoxComm/router/plugins/session"
+	"github.com/FoxComm/router/plugins/site_activity"
 )
 
 func GetRegistry() (*plugin.Registry, error) {

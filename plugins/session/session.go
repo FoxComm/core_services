@@ -10,7 +10,7 @@ import (
 	"github.com/FoxComm/FoxComm/endpoints"
 	"github.com/FoxComm/FoxComm/logger"
 	"github.com/FoxComm/FoxComm/models"
-	"github.com/FoxComm/FoxComm/router/common"
+	"github.com/FoxComm/router/common"
 	"github.com/gorilla/securecookie"
 	"github.com/gorilla/sessions"
 	"github.com/kidstuff/mongostore"

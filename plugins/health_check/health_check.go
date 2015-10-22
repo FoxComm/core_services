@@ -8,7 +8,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/FoxComm/FoxComm/router/netutils"
+	"github.com/FoxComm/router/netutils"
 
 	_ "github.com/FoxComm/FoxComm/utils/ssl"
 	"github.com/FoxComm/vulcand/engine"

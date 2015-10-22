@@ -13,9 +13,9 @@ import (
 	"github.com/FoxComm/FoxComm/logger"
 	"github.com/FoxComm/FoxComm/models"
 	"github.com/FoxComm/FoxComm/repositories"
-	"github.com/FoxComm/FoxComm/router/common"
-	netutils "github.com/FoxComm/FoxComm/router/netutils"
 	"github.com/FoxComm/FoxComm/utils"
+	"github.com/FoxComm/router/common"
+	netutils "github.com/FoxComm/router/netutils"
 	"github.com/jmcvetta/napping"
 	oxyutils "github.com/mailgun/oxy/utils"
 )
