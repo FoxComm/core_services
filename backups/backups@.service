@@ -1,0 +1,19 @@
+[Unit]
+Description=backups
+After=docker.service
+Requires=docker.service
+
+[Service]
+EnvironmentFile=/etc/environment
+User=core
+TimeoutStartSec=60
+ExecStartPre=-/usr/bin/docker kill backups-%i
+ExecStartPre=-/usr/bin/docker rm backups-%i
+ExecStartPre=/usr/bin/docker pull quay.io/foxcomm/backups:$VERSION$
+ExecStart=/bin/sh -c "IMAGE_ID=`/usr/bin/docker images | grep backups | grep $VERSION$ | awk '{print $3}'` && /usr/bin/docker run --name=backups-%i -p 0.0.0.0:1700%i:1700%i --env CorePort=1700%i --env PORT=1700%i --env PRIVATE_IPV4=$COREOS_PRIVATE_IPV4 --env EtcdHost=$COREOS_PRIVATE_IPV4 --env EtcdPort=4001 $IMAGE_ID"
+ExecStop=/usr/bin/docker kill backups-%i
+ExecStopPost=/bin/sh -c "/usr/bin/etcdctl rm /endpoints/backups/$COREOS_PRIVATE_IPV4:1700%i"
+Restart=on-failure
+
+[X-Fleet]
+Conflicts=backups*
