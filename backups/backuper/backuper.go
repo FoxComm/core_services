@@ -15,11 +15,11 @@ import (
 
 	"github.com/FoxComm/FoxComm/alerts"
 	"github.com/FoxComm/FoxComm/configs"
-	. "github.com/FoxComm/FoxComm/db/masterdb"
 	"github.com/FoxComm/FoxComm/logger"
 	"github.com/FoxComm/FoxComm/utils"
 	_ "github.com/FoxComm/FoxComm/utils/ssl"
 	"github.com/FoxComm/core_services/feature_manager/core"
+	. "github.com/FoxComm/libs/db/masterdb"
 	"github.com/jrallison/go-workers"
 	"github.com/mitchellh/goamz/aws"
 	"github.com/mitchellh/goamz/s3"

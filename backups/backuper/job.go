@@ -4,9 +4,9 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/jrallison/go-workers"
 
-	. "github.com/FoxComm/FoxComm/db/masterdb"
 	"github.com/FoxComm/FoxComm/logger"
 	"github.com/FoxComm/FoxComm/utils"
+	. "github.com/FoxComm/libs/db/masterdb"
 )
 
 type Job struct {

@@ -5,7 +5,7 @@ import (
 	"net/url"
 	"sync"
 
-	. "github.com/FoxComm/FoxComm/db/masterdb"
+	. "github.com/FoxComm/libs/db/masterdb"
 )
 
 var DomainStoreMap map[string]*Store //This is a convenience map, for the sake of speed.

@@ -4,7 +4,7 @@ import (
 	"crypto/md5"
 	"fmt"
 
-	"github.com/FoxComm/FoxComm/db/db_switcher"
+	"github.com/FoxComm/libs/db/db_switcher"
 )
 
 const (

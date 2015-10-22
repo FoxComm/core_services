@@ -3,8 +3,8 @@ package migration
 import (
 	"fmt"
 
-	"github.com/FoxComm/FoxComm/db/db_switcher"
 	"github.com/FoxComm/core_services/user/service"
+	"github.com/FoxComm/libs/db/db_switcher"
 )
 
 type Migration struct {

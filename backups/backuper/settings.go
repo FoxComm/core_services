@@ -1,8 +1,8 @@
 package backuper
 
 import (
-	. "github.com/FoxComm/FoxComm/db/masterdb"
 	"github.com/FoxComm/FoxComm/utils"
+	. "github.com/FoxComm/libs/db/masterdb"
 	"github.com/gin-gonic/gin"
 )
 
