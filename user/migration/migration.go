@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	"github.com/FoxComm/FoxComm/db/db_switcher"
-	"github.com/FoxComm/FoxComm/user/service"
+	"github.com/FoxComm/core_services/user/service"
 )
 
 type Migration struct {
