@@ -1,0 +1,404 @@
+[listeners]
+  [listeners.default]
+    protocol = "http"
+  [listeners.default.address]
+    network = "tcp"
+    address = "0.0.0.0:8000"
+
+[frontends]
+
+  ##################################################
+  # origin_backend
+  [frontends.origin_backend]
+    Route = "PathRegexp(`^/admin/.*`)"
+    Type = "http"
+    BackendId = "origin_backend"
+
+  [frontends.origin_backend.settings]
+    PassHostHeader = true
+
+  [[frontends.origin_backend.middlewares]]
+    middlewareId = "recover"
+    priority = 0
+
+  [[frontends.origin_backend.middlewares]]
+    middlewareId = "feature_validator"
+    priority = 1
+
+  [[frontends.origin_backend.middlewares]]
+    middlewareId = "session"
+    priority = 2
+
+  ##################################################
+  # origin_frontend
+  [frontends.origin_frontend]
+    Route = "PathRegexp(`^/.*`)"
+    Type = "http"
+    BackendId = "origin_frontend"
+
+  [frontends.origin_frontend.settings]
+    PassHostHeader = true
+
+  [frontends.origin_frontend.settings.noServersHandler]
+    statuscode = 503
+    body = "Service temporarily unavailable"
+
+  [[frontends.origin_frontend.middlewares]]
+    middlewareId = "recover"
+    priority = 0
+
+  [[frontends.origin_frontend.middlewares]]
+    middlewareId = "cbreaker_frontend"
+    priority = 1
+
+  [[frontends.origin_frontend.middlewares]]
+    middlewareId = "feature_validator"
+    priority = 2
+
+  [[frontends.origin_frontend.middlewares]]
+    middlewareId = "site_activity"
+    priority = 3
+
+  [[frontends.origin_frontend.middlewares]]
+    middlewareId = "session"
+    priority = 4
+
+
+  ##################################################
+  # health_check
+  [frontends.health_check]
+    Route = "PathRegexp(`^/health_check.*`)"
+    Type = "http"
+    BackendId = "health_check"
+    
+  [frontends.health_check.settings]
+    PassHostHeader = true
+
+  [[frontends.health_check.middlewares]]
+    middlewareId = "health_check"
+    priority = 0
+
+  ##################################################
+  # causes_cache
+  [frontends.causes_cache]
+    Route =  'PathRegexp(`^/app/api/causes$`) && Method("GET")'
+    Type = "http"
+    BackendId = "causes_cache"
+
+  [frontends.causes_cache.settings]
+    PassHostHeader = true
+
+  [[frontends.causes_cache.middlewares]]
+    middlewareId = "recover"
+    priority = 0
+
+  [[frontends.causes_cache.middlewares]]
+    middlewareId = "feature_validator"
+    priority = 2
+
+  [[frontends.causes_cache.middlewares]]
+    middlewareId = "cbreaker_api"
+    priority = 1
+
+  [[frontends.causes_cache.middlewares]]
+    middlewareId = "session"
+    priority = 3
+
+  ##################################################
+  # catalog_cache
+  [frontends.catalog_cache]
+    Route = "PathRegexp(`^/catalog.*`)"
+    Type = "http"
+    BackendId = "catalog_cache"
+
+  [frontends.catalog_cache.settings]
+    PassHostHeader = true
+
+  [[frontends.catalog_cache.middlewares]]
+    middlewareId = "recover"
+    priority = 0
+
+  [[frontends.catalog_cache.middlewares]]
+    middlewareId = "feature_validator"
+    priority = 1
+
+  [[frontends.catalog_cache.middlewares]]
+    middlewareId = "session"
+    priority = 2
+
+  ##################################################
+  # user
+  [frontends.user]
+    Route = "PathRegexp(`^/session.*`)"
+    Type = "http"
+    BackendId = "user"
+
+  [frontends.user.settings]
+    PassHostHeader = true
+
+  [[frontends.user.middlewares]]
+    middlewareId = "recover"
+    priority = 0
+
+  [[frontends.user.middlewares]]
+    middlewareId = "feature_validator"
+    priority = 1
+
+  [[frontends.user.middlewares]]
+    middlewareId = "session"
+    priority = 2
+
+  ##################################################
+  # core
+  [frontends.core]
+    Route = "PathRegexp(`^/foxcomm/core.*`)"
+    Type = "http"
+    BackendId = "core"
+
+  [frontends.core.settings]
+    PassHostHeader = true
+
+  [[frontends.core.middlewares]]
+    middlewareId = "recover"
+    priority = 0
+
+  [[frontends.core.middlewares]]
+    middlewareId = "feature_validator"
+    priority = 1
+
+  [[frontends.core.middlewares]]
+    middlewareId = "session"
+    priority = 2
+
+  ##################################################
+  # loyalty_engine
+  [frontends.loyalty_engine]
+    Route = "PathRegexp(`^/foxcomm/loyalty_engine.*`)"
+    Type = "http"
+    BackendId = "social_analytics"
+
+  [frontends.loyalty_engine.settings]
+    PassHostHeader = true
+
+  [[frontends.loyalty_engine.middlewares]]
+    middlewareId = "recover"
+    priority = 0
+
+  [[frontends.loyalty_engine.middlewares]]
+    middlewareId = "feature_validator"
+    priority = 1
+
+  [[frontends.loyalty_engine.middlewares]]
+    middlewareId = "session"
+    priority = 2
+
+  ##################################################
+  # social_shopping
+  [frontends.social_shopping]
+    Route = "PathRegexp(`^/foxcomm/social_shopping.*`)"
+    Type = "http"
+    BackendId = "social_shopping"
+
+  [frontends.social_shopping.settings]
+    PassHostHeader = true
+
+  [[frontends.social_shopping.middlewares]]
+    middlewareId = "recover"
+    priority = 0
+
+  [[frontends.social_shopping.middlewares]]
+    middlewareId = "feature_validator"
+    priority = 1
+
+  [[frontends.social_shopping.middlewares]]
+    middlewareId = "session"
+    priority = 2
+
+  ###################################################
+  # social_analytics
+  [frontends.social_analytics]
+    Route = "PathRegexp(`^/foxcomm/social_analytics.*`)"
+    Type = "http"
+    BackendId = "social_analytics"
+
+  [frontends.social_analytics.settings]
+    PassHostHeader = true
+
+  [[frontends.social_analytics.middlewares]]
+    middlewareId = "recover"
+    priority = 0
+
+  [[frontends.social_analytics.middlewares]]
+    middlewareId = "feature_validator"
+    priority = 1
+
+  [[frontends.social_analytics.middlewares]]
+    middlewareId = "session"
+    priority = 2
+
+  ###################################################
+  # backups
+  [frontends.backups]
+    Route = "PathRegexp(`^/foxcomm/backups.*`)"
+    Type = "http"
+    BackendId = "backups"
+
+  [frontends.backups.settings]
+    PassHostHeader = true
+
+  [[frontends.backups.middlewares]]
+    middlewareId = "recover"
+    priority = 0
+
+  [[frontends.backups.middlewares]]
+    middlewareId = "feature_validator"
+    priority = 1
+
+  [[frontends.backups.middlewares]]
+    middlewareId = "session"
+    priority = 2
+
+  ###################################################
+  # ui
+  [frontends.ui]
+    Route = "PathRegexp(`^/foxcomm/ui.*`)"
+    Type = "http"
+    BackendId = "ui"
+
+  [frontends.ui.settings]
+    PassHostHeader = true
+
+  [[frontends.ui.middlewares]]
+    middlewareId = "recover"
+    priority = 0
+
+  [[frontends.ui.middlewares]]
+    middlewareId = "feature_validator"
+    priority = 1
+
+  [[frontends.ui.middlewares]]
+    middlewareId = "session"
+    priority = 2
+
+  [[frontends.ui.middlewares]]
+    middlewareId = "foxcomm_ui_rewriter"
+    priority = 3
+
+
+#################################################
+# Backends
+#################################################
+[backends]
+
+  [backends.origin_backend]
+    type = "http"
+  [backends.origin_backend.settings]
+  [backends.origin_backend.settings.tls]
+    InsecureSkipVerify = true
+    MinVersion = "VersionTLS10"
+  [backends.origin_backend.settings.keepalive]
+    period = "60s"
+
+  [backends.origin_frontend]
+    type = "http"
+
+  [backends.origin_frontend.settings]
+  [backends.origin_frontend.settings.tls]
+    InsecureSkipVerify = true
+    MinVersion = "VersionTLS10"
+  [backends.origin_frontend.settings.keepalive]
+    period = "60s"
+
+  [backends.health_check]
+    type = "http"
+
+  [backends.causes_cache]
+    type = "http"
+
+  [backends.catalog_cache]
+    type = "http"
+
+  [backends.user]
+    type = "http"
+
+  [backends.core]
+    type = "http"
+
+  [backends.loyalty_engine]
+    type = "http"
+
+  [backends.backups]
+    type = "http"
+
+  [backends.ui]
+    type = "http"
+
+  [backends.social_shopping]
+    type = "http"
+
+  [backends.social_analytics]
+    type = "http"
+
+
+
+#######################################################
+# Middlewares
+#######################################################
+[middlewares]
+
+  [middlewares.recover]
+    type = "recover"
+  [middlewares.recover.middleware]
+
+  [middlewares.health_check]
+    type = "health_check"
+  [middlewares.health_check.middleware]
+
+  [middlewares.feature_validator]
+    type = "feature_validator"
+  [middlewares.feature_validator.middleware]
+
+  [middlewares.session]
+    type = "session"
+  [middlewares.session.middleware]
+
+  [middlewares.site_activity]
+    type = "site_activity"
+  [middlewares.site_activity.middleware]
+
+  [middlewares.foxcomm_ui_rewriter]
+    type = "rewrite"
+  [middlewares.foxcomm_ui_rewriter.middleware]
+    regexp = "/foxcomm/ui(.*)"
+    replacement = "$1"
+    rewritebody = false
+    redirect = false
+
+  [middlewares.cbreaker_frontend]
+    type = "cbreaker"
+  [middlewares.cbreaker_frontend.middleware]
+    condition = "NetworkErrorRatio() > 0.5"
+    FallbackDuration = 27000000000
+    RecoveryDuration = 28000000000
+    CheckPeriod = 250000000
+  [middlewares.cbreaker_frontend.middleware.fallback]
+    type = "response"
+  [middlewares.cbreaker_frontend.middleware.fallback.action]
+    statuscode = 502
+    body = "Bad gateway"
+
+  [middlewares.cbreaker_api]
+    type = "cbreaker"
+  [middlewares.cbreaker_api.middleware]
+    condition = "NetworkErrorRatio() > 0.5"
+    FallbackDuration = 27000000000
+    RecoveryDuration = 28000000000
+    CheckPeriod = 250000000
+  [middlewares.cbreaker_api.middleware.fallback]
+    type = "response"
+  [middlewares.cbreaker_api.middleware.fallback.action]
+    statuscode = 502
+    contenttype = "application/json"
+    body = "{\"error\": \"Bad gateway\"}"
+
+
