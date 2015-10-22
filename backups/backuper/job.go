@@ -5,8 +5,8 @@ import (
 	"github.com/jrallison/go-workers"
 
 	"github.com/FoxComm/FoxComm/logger"
-	"github.com/FoxComm/FoxComm/utils"
 	. "github.com/FoxComm/libs/db/masterdb"
+	"github.com/FoxComm/libs/utils"
 )
 
 type Job struct {
