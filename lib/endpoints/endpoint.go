@@ -6,7 +6,7 @@ import (
 	"log"
 	"strconv"
 
-	"github.com/FoxComm/FoxComm/logger"
+	"github.com/FoxComm/libs/logger"
 	"github.com/mailgun/vulcan/location/httploc"
 	"github.com/mailgun/vulcan/middleware"
 

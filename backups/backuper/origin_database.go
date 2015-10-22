@@ -9,7 +9,7 @@ import (
 	"github.com/stacktic/dropbox"
 
 	"github.com/FoxComm/FoxComm/alerts"
-	"github.com/FoxComm/FoxComm/logger"
+	"github.com/FoxComm/libs/logger"
 )
 
 func OriginDatabase(settings Settings) error {

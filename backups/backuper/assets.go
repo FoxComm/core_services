@@ -7,7 +7,7 @@ import (
 	"sync"
 
 	"github.com/FoxComm/FoxComm/alerts"
-	"github.com/FoxComm/FoxComm/logger"
+	"github.com/FoxComm/libs/logger"
 	"github.com/stacktic/dropbox"
 )
 

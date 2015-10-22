@@ -4,7 +4,7 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/jrallison/go-workers"
 
-	"github.com/FoxComm/FoxComm/logger"
+	"github.com/FoxComm/libs/logger"
 	. "github.com/FoxComm/libs/db/masterdb"
 	"github.com/FoxComm/libs/utils"
 )

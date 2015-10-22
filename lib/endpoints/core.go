@@ -3,7 +3,7 @@ package endpoints
 import (
 	"github.com/FoxComm/FoxComm/configs"
 	"github.com/FoxComm/FoxComm/etcd_client"
-	"github.com/FoxComm/FoxComm/logger"
+	"github.com/FoxComm/libs/logger"
 	"github.com/FoxComm/core_services/feature_manager/core"
 	"github.com/coreos/go-etcd/etcd"
 )

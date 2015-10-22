@@ -10,7 +10,7 @@ import (
 
 	"github.com/FoxComm/FoxComm/alerts"
 	"github.com/FoxComm/FoxComm/configs"
-	"github.com/FoxComm/FoxComm/logger"
+	"github.com/FoxComm/libs/logger"
 )
 
 func CoreDatabase(settings Settings) error {

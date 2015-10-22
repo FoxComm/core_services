@@ -15,7 +15,7 @@ import (
 
 	"github.com/FoxComm/FoxComm/alerts"
 	"github.com/FoxComm/FoxComm/configs"
-	"github.com/FoxComm/FoxComm/logger"
+	"github.com/FoxComm/libs/logger"
 	"github.com/FoxComm/core_services/feature_manager/core"
 	. "github.com/FoxComm/libs/db/masterdb"
 	"github.com/FoxComm/libs/utils"
