@@ -1,0 +1,18 @@
+[Unit]
+Description=Router
+After=docker.service
+Requires=docker.service
+
+[Service]
+EnvironmentFile=/etc/environment
+User=core
+TimeoutStartSec=10
+ExecStartPre=-/usr/bin/docker kill router-%i
+ExecStartPre=-/usr/bin/docker rm router-%i
+ExecStartPre=/usr/bin/docker pull quay.io/foxcomm/router:$VERSION$
+ExecStart=/bin/sh -c "IMAGE_ID=`/usr/bin/docker images | grep router | grep $VERSION$ | awk '{print $3}'` && /usr/bin/docker run -v /home/core/router_config:/config  -v '/etc/ssl/certs/ca-certificates.crt:/etc/ssl/certs/ca-certificates.crt' --name=router-%i -p 0.0.0.0:8000:8000 -p 0.0.0.0:8181:8181 -p 0.0.0.0:8182:8182 --env OriginHost='' --env PRIVATE_IPV4=$COREOS_PRIVATE_IPV4 --env EtcdHost=$COREOS_PRIVATE_IPV4 --env EtcdPort=4001 --env LOG_LEVEL=1 $IMAGE_ID"
+ExecStop=/usr/bin/docker kill router-%i
+Restart=on-failure
+
+[X-Fleet]
+Conflicts=router*
