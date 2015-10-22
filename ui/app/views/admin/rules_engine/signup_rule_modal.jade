@@ -1,0 +1,11 @@
+.modal-header
+  h3.modal-title {{ title }}
+.modal-body
+  form.form-horizontal(role="form")
+    .form-group
+      label.col-sm-2.control-label(for='input-text') Origin Endpoint Url
+      .col-sm-10
+        input.form-control(type='text', placeholder='Origin Endpoint Url', ng-model="newRule.OriginEndpointUrl")
+.modal-footer
+  button.btn.btn-primary(ng-click='ok()') {{ okText }}
+  button.btn.btn-warning(ng-click='cancel()') {{ cancelText }}

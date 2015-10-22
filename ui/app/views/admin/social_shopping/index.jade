@@ -1,0 +1,25 @@
+.page-heading.animated.fadeInDownBig
+  h1 Social Shopping
+    small
+      |  Where you turn your social features on/off.
+.dashboard(ui-view)
+  .box-info.full.animated.fadeInDown
+    ul.nav.nav-tabs.nav-justified
+      li(ng-repeat="preference in socialShoppingPrefs", ng-class='{active:$first}')
+        a(data-target="#{{preference.Value}}", data-toggle='tab')
+          | {{ preference.Value }}
+    .tab-content
+      .tab-pane.animated.fadeInRight(ng-repeat="preference in socialShoppingPrefs", id="{{preference.Value}}", ng-class='{active:$first}')
+        .user-profile-content
+          .form-horizontal(role="form")
+            .form-group(ng-repeat="subPreference in preference.Preferences")
+              label.col-sm-2.control-label(for='input-text') {{ subPreference.Key }}
+              .col-sm-10
+                input.form-control(type="text", ng-model="subPreference.Value")
+          .checkbox
+            label
+              .icheckbox_minimal-grey(ng-class="{checked: preference.Enable}")
+                input(type='checkbox', ng-model="preference.Enable", style="position: absolute; opacity: 0;")
+              |   Enable
+
+            a.btn.btn-primary.md-trigger.pull-right(data-modal='form-modal', ng-click="updatePreference(preference)") Save Changes

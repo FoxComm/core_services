@@ -1,0 +1,67 @@
+.page-heading.animated.fadeInDownBig
+  h1 Balance Rules
+    small
+.dashboard(ui-view)
+  .col-sm-12
+    .box-info.full.animated.fadeInDown
+      h2
+        strong Expiration Rule
+      .table
+        table.table(data-sortable='', data-sortable-initialized='true')
+          thead
+            th(data-sorted='false') Expiration Type
+            th(data-sorted='false') Expiration Window
+            th(data-sorted='false') Target Historical Event
+            th(data-sorted='false') Options
+          tbody
+            tr
+              td(ng-repeat="(ruleKey, ruleValue) in balanceRule.ruleSet.ExpirationRule")
+                input(type='text', placeholder='{{ruleKey}}', ng-model="balanceRule.ruleSet.ExpirationRule[ruleKey]")
+              td
+                div.btn-group.btn-group-xs
+                  a.btn.btn-default(data-toggle='tooltip', title='', data-original-title='Delete', ng-click="balanceRule.removeRule(balanceRule.ruleSet.ExpirationRule)")
+                    i.fa.fa-trash-o
+                  a.btn.btn-default(data-toggle='tooltip', title='', data-original-title='Edit', ng-click="balanceRule.saveRuleSet()")
+                    i.fa.fa-save
+
+  .col-sm-12
+    .box-info.full.animated.fadeInDown
+      h2
+        strong Spending Threshold Rule
+      .table
+        table.table(data-sortable='', data-sortable-initialized='true')
+          thead
+            th(data-sorted='false') Spending Threshold
+            th(data-sorted='false') Unlock Duration
+            th(data-sorted='false') Unlock Handling
+            th(data-sorted='false') Options
+          tbody
+            tr
+              td(ng-repeat="(ruleKey, ruleValue) in balanceRule.ruleSet.SpendingThresholdRule")
+                input(type='text', placeholder='{{ruleKey}}', ng-model="balanceRule.ruleSet.SpendingThresholdRule[ruleKey]")
+              td
+                div.btn-group.btn-group-xs
+                  a.btn.btn-default(data-toggle='tooltip', title='', data-original-title='Delete', ng-click="balanceRule.removeRule(balanceRule.ruleSet.SpendingThresholdRule)")
+                    i.fa.fa-trash-o
+                  a.btn.btn-default(data-toggle='tooltip', title='', data-original-title='Edit', ng-click="balanceRule.saveRuleSet()")
+                    i.fa.fa-save
+
+  .col-sm-12
+    .box-info.full.animated.fadeInDown
+      h2
+        strong Time Threshold Rule
+      .table
+        table.table(data-sortable='', data-sortable-initialized='true')
+          thead
+            th(data-sorted='false') Time Threshold
+            th(data-sorted='false') Options
+          tbody
+            tr
+              td
+                input(type='text', placeholder='Time Threshold', ng-model="balanceRule.ruleSet.TimeThresholdRule.TimeThreshold")
+              td
+                div.btn-group.btn-group-xs
+                  a.btn.btn-default(data-toggle='tooltip', title='', data-original-title='Delete', ng-click="balanceRule.removeRule(balanceRule.ruleSet.TimeThresholdRule)")
+                    i.fa.fa-trash-o
+                  a.btn.btn-default(data-toggle='tooltip', title='', data-original-title='Edit', ng-click="balanceRule.saveRuleSet()")
+                    i.fa.fa-save

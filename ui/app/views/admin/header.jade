@@ -1,0 +1,42 @@
+button.button-menu-mobile.show-sidebar
+  i.fa.fa-bars
+.navbar.navbar-default(role='navigation')
+  .container
+    .navbar-header
+      button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+        i.fa.fa-angle-double-down
+    .navbar-collapse.collapse
+      ul.nav.navbar-nav
+        li
+          a
+            i.fa.fa-cog
+        li.dropdown
+          a.dropdown-toggle(href='#', data-toggle='dropdown')
+            | English (US)
+            i.fa.fa-chevron-down.i-xs
+          ul.dropdown-menu.animated.half.flipInX
+            li
+              a(href='#') English (British)
+
+      ul.nav.navbar-nav.navbar-right.top-navbar
+
+        li.dropdown
+          a.dropdown-toggle(data-toggle='dropdown')
+            | Howdy,
+            strong  Admin
+            i.fa.fa-chevron-down.i-xs
+          ul.dropdown-menu.animated.half.flipInX
+            li
+              a(href='#') My Profile
+            li
+              a(href='#') Change Password
+            li
+              a(href='#') Account Setting
+            li.divider
+            li.dropdown-header Another action
+            li
+              a(href='#') Help
+            li
+              a(href='lock-screen.html') Lock me
+            li
+              a.md-trigger(data-ng-click="vm.logout()") Logout

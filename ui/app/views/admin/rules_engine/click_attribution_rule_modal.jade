@@ -1,0 +1,27 @@
+.modal-header
+  h3.modal-title {{ title }}
+.modal-body
+  form.form-horizontal(role="form")
+    .form-group
+      label.col-sm-2.control-label(for='input-text') Rule Name
+      .col-sm-10
+        input.form-control(type='text', placeholder='Rule Name', ng-model="newRule.RuleName")
+    .form-group
+      label.col-sm-2.control-label(for='input-text') Rule Description
+      .col-sm-10
+        input.form-control(type='text', placeholder='Rule Description', ng-model="newRule.RuleDescription")
+    .form-group
+      label.col-sm-2.control-label(for='input-text') Attribution Window
+      .col-sm-10
+        input.form-control(type='text', placeholder='Attribution Window', ng-model="newRule.AttributionWindow")
+    .form-group
+      label.col-sm-2.control-label(for='input-text') Number Of Times To Attribute
+      .col-sm-10
+        input.form-control(type='text', placeholder='Number Of Times To Attribute', ng-model="newRule.NumberOfTimesToAttribute")
+    .form-group
+      label.col-sm-2.control-label(for='input-text') Weight Table
+      .col-sm-10
+        input.form-control(type='text', placeholder='Weight Table', ng-model="newRule.WeightTable")
+.modal-footer
+  button.btn.btn-primary(ng-click='ok()') {{ okText }}
+  button.btn.btn-warning(ng-click='cancel()') {{ cancelText }}

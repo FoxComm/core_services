@@ -1,0 +1,29 @@
+table.table(data-sortable='', data-sortable-initialized='true')
+  thead
+    th(data-sorted='false') Rule Type
+    th(data-sorted='false') Multilevel
+    th(data-sorted='false') Accumulation Limit
+    th(data-sorted='false') Tree Levels
+    th(data-sorted='false') Minimum Amount
+    th(data-sorted='false') Is Variable?
+    th(data-sorted='false') Varies By
+    th(data-sorted='false') Fixed Amount
+    th(data-sorted='false') Percentage Allocated
+    th(data-sorted='false') Options
+  tbody
+    tr(ng-repeat="rule in accumulationRule.ruleSet.RuleStack")
+      td {{ rule.RuleType.split('.')[1] }}
+      td {{ rule[rule.RuleType.split('.')[1]].MultiLevel }}
+      td {{ rule[rule.RuleType.split('.')[1]].AccumulationLimit }}
+      td {{ rule[rule.RuleType.split('.')[1]].TreeLevels }}
+      td {{ rule[rule.RuleType.split('.')[1]].MinimumAmount }}
+      td {{ rule[rule.RuleType.split('.')[1]].IsVariable }}
+      td {{ rule[rule.RuleType.split('.')[1]].VariesBy }}
+      td {{ rule[rule.RuleType.split('.')[1]].FixedAmount }}
+      td {{ rule[rule.RuleType.split('.')[1]].PercentageAllocated }}
+      td
+        div.btn-group.btn-group-xs
+          a.btn.btn-default(data-toggle='tooltip', title='', data-original-title='Delete', ng-click="accumulationRule.openDeleteModal(rule)")
+            i.fa.fa-trash-o
+          a.btn.btn-default(data-toggle='tooltip', title='', data-original-title='Edit', ng-click="accumulationRule.openEditModal(rule)")
+            i.fa.fa-edit

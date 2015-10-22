@@ -1,0 +1,29 @@
+.page-heading.animated.fadeInDownBig
+  h1 Manual Attributions
+    small
+.dashboard(ui-view)
+  .col-sm-12
+    .box-info.animated.fadeInDown
+      h2
+        strong Manual Attributions
+      button.btn.btn-success(type='button', ng-click="ma.openCreateModal()")
+        i.fa.fa-plus
+        | &nbspAdd Manual Attribution
+      .table
+        table.table(data-sortable='', data-sortable-initialized='true')
+          thead
+            th(data-sorted='false') Attributed
+            th(data-sorted='false') Referred
+            th(data-sorted='false') Actions
+          tbody
+            tr(ng-repeat="manualAttr in ma.attributions")
+              td
+                {{ manualAttr.Attributed.Name }}
+              td
+                {{ manualAttr.Referred.Name }}
+              td
+                div.btn-group.btn-group-xs
+                  a.btn.btn-default(data-toggle='tooltip', title='', data-original-title='Delete', ng-click="ma.openDeleteModal(manualAttr)")
+                    i.fa.fa-trash-o
+                  a.btn.btn-default(data-toggle='tooltip', title='', data-original-title='Edit', ng-click="ma.openEditModal(manualAttr)")
+                    i.fa.fa-save

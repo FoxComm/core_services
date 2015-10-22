@@ -1,0 +1,48 @@
+doctype html
+html.no-js(data-ng-app="foxcommUiApp")
+  include admin/base
+
+  body(data-ng-class="bodyClass", class="auth")
+    .auth-form(error-messages-manager, error-messages="vm.errorMessages")
+      .container(data-ng-controller='auth.login as vm')
+        form.form-inline(role="form",
+                          name="loginForm",
+                          data-ng-submit='vm.login()',
+                          novalidate)
+
+          error-messages(submitted="vm.formSubmitted", form="loginForm")
+
+          .form-group
+            .email-group
+              input.form-control(type="email",
+                                  name="email",
+                                  placeholder="EMAIL ADDRESS",
+                                  data-ng-model="vm.user.email",
+                                  field-with-error,
+                                  form-field="loginForm.email",
+                                  data-ng-required="true")
+
+          br
+
+          .form-group
+            .password-group
+              input.form-control(type="password",
+                                  name="password",
+                                  placeholder="PASSWORD",
+                                  data-ng-model="vm.user.password",
+                                  field-with-error,
+                                  form-field="loginForm.password",
+                                  autocomplete="off",
+                                  data-ng-required="true")
+
+          br
+
+          .form-group
+            button.button.continue(type='submit') Login
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    include includes/scripts

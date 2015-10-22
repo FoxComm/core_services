@@ -1,0 +1,39 @@
+.modal-header
+  h3.modal-title {{ title }}
+.modal-body
+  form.form-horizontal(role="form")
+    .form-group
+      label.col-sm-2.control-label(for='input-text') Multi Level
+      .col-sm-10
+        input.form-control(type='checkbox', ng-model="newRule.MultiLevel")
+    .form-group
+      label.col-sm-2.control-label(for='input-text') Accumulation Limit
+      .col-sm-10
+        input.form-control(type='text', ng-model="newRule.AccumulationLimit")
+    .form-group
+      label.col-sm-2.control-label(for='input-text') Tree Levels
+      .col-sm-10
+        input.form-control(type='text', ng-model="newRule.TreeLevels")
+    .form-group
+      label.col-sm-2.control-label(for='input-text') Minimum Amount
+      .col-sm-10
+        input.form-control(type='text', ng-model="newRule.MinimumAmount")
+    .form-group
+      label.col-sm-2.control-label(for='input-text') Is Variable?
+      .col-sm-10
+        input.form-control(type='checkbox', ng-model="newRule.IsVariable")
+    .form-group
+      label.col-sm-2.control-label(for='input-text') Varies By
+      .col-sm-10
+        input.form-control(type='numeric', ng-model="newRule.VariesBy")
+    .form-group
+      label.col-sm-2.control-label(for='input-text') Fixed Amount
+      .col-sm-10
+        input.form-control(type='text', ng-model="newRule.FixedAmount")
+    .form-group
+      label.col-sm-2.control-label(for='input-text') Percentage Allocated
+      .col-sm-10
+        input.form-control(type='text', ng-model="newRule.PercentageAllocated")
+.modal-footer
+  button.btn.btn-primary(ng-click='ok()') {{ okText }}
+  button.btn.btn-warning(ng-click='cancel()') {{ cancelText }}

@@ -1,0 +1,72 @@
+.header.sidebar.rows
+  .logo.animated.bounceIn
+    h1
+      a(ui-sref='admin.dashboard')
+        | FoxComm Admin
+.body.rows.scroll-y.animated.fadeInLeftBig
+  .sidebar-inner.slimscroller
+    .media
+      a.pull-left(href='#')
+        img.media-object.img-circle(src='/images/avatar/2.jpg', alt='Avatar')
+      .media-body
+        | Welcome back,
+        h4.media-heading
+          strong Admin
+        a(ui-sref='admin.dashboard') Edit
+        a.md-trigger(data-ng-click="vm.logout()", data-modal='logout-modal-alt') Logout
+    #search
+      form(role='form')
+        input.form-control.search(type='text', placeholder='Search here...')
+        i.fa.fa-search
+    #sidebar-menu
+      ul
+        li
+          a(href="/", target="_self")
+            i.fa.fa-shopping-cart
+            | Go to Store
+        li(ui-sref-active='active')
+          a(ui-sref='admin.global_config')
+            i.fa.fa-gears
+            | Global Configuration
+
+        li
+          a(ui-sref='admin.rules_engine.attribution_rules')
+            i.fa.fa-sort-amount-asc
+            i.fa.fa-angle-double-down.i-right
+            | Rules Engine
+          ul
+            li
+              a(ui-sref='admin.rules_engine.accumulation_rules')
+                i.fa.fa-dashboard
+                | Accumulation Rules
+            li
+              a(ui-sref='admin.rules_engine.attribution_rules')
+                i.fa.fa-smile-o
+                | Attribution Rules
+            li
+              a(ui-sref='admin.rules_engine.balance_rules')
+                i.fa.fa-money
+                | Balance Rules
+            li
+              a(ui-sref='admin.rules_engine.manual_attributions')
+                i.fa.fa-money
+                | Manual Attributions
+            li
+              a(ui-sref='admin.rules_engine.promotion_rules')
+                i.fa.fa-money
+                | Promotion Rules
+        
+        li(ui-sref-active='active')
+          a(ui-sref='admin.social_analytics')
+            i.fa.fa-bar-chart-o
+            | Social Analytics
+        li(ui-sref-active='active')
+          a(ui-sref='admin.social_shopping')
+            i.fa.fa-bar-chart-o
+            | Social Shopping
+        li(ui-sref-active='active')
+          a(ui-sref='admin.backups')
+            i.fa.fa-bar-chart-o
+            | Backups
+        
+      .clear

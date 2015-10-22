@@ -1,0 +1,15 @@
+table.table(data-sortable='', data-sortable-initialized='true')
+  thead
+    th(data-sorted='false') Origin Endpoint Url
+    th(data-sorted='false') Options
+
+  tbody
+    tr(ng-repeat="rule in accumulationRule.ruleSet.RuleStack")
+      td {{ rule[rule.RuleType.split('.')[1]].OriginEndpointUrl }}
+
+      td
+        div.btn-group.btn-group-xs
+          a.btn.btn-default(data-toggle='tooltip', title='', data-original-title='Delete', ng-click="accumulationRule.openDeleteModal(rule)")
+            i.fa.fa-trash-o
+          a.btn.btn-default(data-toggle='tooltip', title='', data-original-title='Edit', ng-click="accumulationRule.openEditModal(rule)")
+            i.fa.fa-edit

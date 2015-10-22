@@ -1,0 +1,15 @@
+.modal-header
+  h3.modal-title {{ title }}
+.modal-body
+  form.form-horizontal(role="form")
+    .form-group
+      label.col-sm-2.control-label(for='input-text') Attributed
+      .col-sm-10
+        input.form-control(type='text', placeholder="Attributed", ng-model="newRule.newAttribution.Attributed" typeahead='entity as entity.Name for entity in newRule.getAllEntities($viewValue) | filter:$viewValue | limitTo:8')
+    .form-group
+      label.col-sm-2.control-label(for='input-text') Referred
+      .col-sm-10
+        input.form-control(type='text', placeholder="Referred", ng-model="newRule.newAttribution.Referred" typeahead='entity as entity.Name for entity in newRule.getAllEntities($viewValue) | filter:$viewValue | limitTo:8')
+.modal-footer
+  button.btn.btn-primary(ng-click='ok()') {{ okText }}
+  button.btn.btn-warning(ng-click='cancel()') {{ cancelText }}

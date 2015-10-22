@@ -1,0 +1,71 @@
+.page-heading.animated.fadeInDownBig
+  h1 Attribution Rules
+    small
+.dashboard(ui-view)
+  .box-info.full.animated.fadeInDown
+    ul.nav.nav-tabs.nav-justified
+      li(ng-repeat="action in attributionRule.actions",
+          ng-if="attributionRule.isValidActionRule(action.Name)",
+          ng-class='{active:$first}',
+          ng-click="attributionRule.getByActionName(action.Name)")
+        a(data-target="#{{action.Name}}", data-toggle='tab')
+          strong {{ action.Name }}
+          |  Attributions Rules Set
+    .tab-content
+      .tab-pane.animated.fadeInRight(ng-repeat="action in attributionRule.actions",
+                                     id="{{action.Name}}",
+                                     ng-if="attributionRule.isValidActionRule(action.Name)",
+                                     ng-class='{active:$first}')
+        .box-info
+          .row
+            .col-sm-10
+              select.form-control.selectpicker(ng-model="attributionRule.ruleType",
+                                                ng-options="ruleType for ruleType in attributionRule.ruleTypes")
+                option(value="") Choose Attribution Rule Type
+            button.btn.btn-success(type='button', ng-click="attributionRule.openCreateModal()", ng-disabled="attributionRule.ruleType == undefined")
+              i.fa.fa-plus
+              | &nbspAdd Rule
+
+        .box-info.full.animated.fadeInDown
+          h2 Click Attribution Rules
+          .table
+            table.table(data-sortable='', data-sortable-initialized='true')
+              thead
+                th(data-sorted='false') Name
+                th(data-sorted='false') Description
+                th(data-sorted='false') Attribution Window
+                th(data-sorted='false') Number Of Times To Attribute
+                th(data-sorted='false') Weight Table
+                th(data-sorted='false') Options
+              tbody
+                tr(ng-repeat="rule in attributionRule.ruleSet.RuleStack",
+                   ng-if="rule.ClickAttributionRule.RuleName != ''")
+                  td {{ rule.ClickAttributionRule.RuleName }}
+                  td {{ rule.ClickAttributionRule.RuleDescription }}
+                  td {{ rule.ClickAttributionRule.AttributionWindow }}
+                  td {{ rule.ClickAttributionRule.NumberOfTimesToAttribute }}
+                  td {{ rule.ClickAttributionRule.WeightTable }}
+                  td
+                    div.btn-group.btn-group-xs
+                      a.btn.btn-default(data-toggle='tooltip', title='', data-original-title='Delete', ng-click="attributionRule.openDeleteModal(rule)")
+                        i.fa.fa-trash-o
+                      a.btn.btn-default(data-toggle='tooltip', title='', data-original-title='Edit', ng-click="attributionRule.openEditModal(rule)")
+                        i.fa.fa-edit
+
+        .box-info.full.animated.fadeInDown
+          h2 Link to Parent Rules
+          .table
+            table.table(data-sortable='', data-sortable-initialized='true')
+              thead
+                th(data-sorted='false') Parent Action Name
+                th(data-sorted='false') Options
+              tbody
+                tr(ng-repeat="rule in attributionRule.ruleSet.RuleStack",
+                   ng-if="rule.LinkToParentRule.ParentActionName != ''")
+                  td {{ rule.LinkToParentRule.ParentActionName }}
+                  td
+                    div.btn-group.btn-group-xs
+                      a.btn.btn-default(data-toggle='tooltip', title='', data-original-title='Delete', ng-click="attributionRule.openDeleteModal(rule)")
+                        i.fa.fa-trash-o
+                      a.btn.btn-default(data-toggle='tooltip', title='', data-original-title='Edit', ng-click="attributionRule.openEditModal(rule)")
+                        i.fa.fa-edit

@@ -1,0 +1,89 @@
+.page-heading.animated.fadeInDownBig
+  h1 Backups
+
+.row.animated.fadeInDown
+  .box-info
+    .icon-box
+      span.fa-stack
+        i.fa.fa-circle.fa-stack-2x.info
+        i.fa.fa-cloud-download.fa-stack-1x.fa-inverse
+    .text-box
+      h3 Manual Backup
+
+      label(ng-repeat="action in backups.actions" class="backup-action")
+        input(type="checkbox" checklist-model="backups.selectedActions" checklist-value="action[0]") 
+        {{action[1]}}
+
+      button.btn.btn-xs.btn-primary(ng-click='backups.enqueueBackup()') Backup now
+
+.row
+  .box-info.animated.bounceIn
+    h2 Settings
+    .additional-btn
+      a.additional-icon(data-toggle="collapse" data-target="#settings")
+        i.fa.fa-chevron-down
+
+    #settings.collapse.in
+      form.form-horizontal(role="form")
+        .col-md-4
+          .box-info
+            h2 Amazon S3
+            .form-group
+              label.col-sm-2.control-label(for='input-text') Id
+              .col-sm-10
+                input.form-control(type='text', placeholder='Amazon S3 Id', ng-model="backups.settings.S3Id")
+            .form-group
+              label.col-sm-2.control-label(for='input-text') Secret
+              .col-sm-10
+                input.form-control(type='text', placeholder='Amazon S3 Secret', ng-model="backups.settings.S3Secret")
+            .form-group
+              label.col-sm-2.control-label(for='input-text') Bucket
+              .col-sm-10
+                input.form-control(type='text', placeholder='Amazon S3 Bucket', ng-model="backups.settings.S3Bucket")
+            .form-group
+              label.col-sm-2.control-label(for='input-text') Region
+              .col-sm-10
+                input.form-control(type='text', placeholder='Amazon S3 Region', ng-model="backups.settings.S3Region")
+
+        .col-md-4
+          .box-info
+            h2 Dropbox
+            .form-group
+              label.col-sm-2.control-label(for='input-text') Id
+              .col-sm-10
+                input.form-control(type='text', placeholder='Dropbox Id', ng-model="backups.settings.DropboxId")
+            .form-group
+              label.col-sm-2.control-label(for='input-text') Secret
+              .col-sm-10
+                input.form-control(type='text', placeholder='Dropbox Secret', ng-model="backups.settings.DropboxSecret")
+            .form-group
+              label.col-sm-2.control-label(for='input-text') Token
+              .col-sm-10
+                input.form-control(type='text', placeholder='Dropbox Token', ng-model="backups.settings.DropboxToken")
+
+        .col-md-4
+          .box-info
+            h2 Database
+            .form-group
+              label.col-sm-2.control-label(for='input-text') URL
+              .col-sm-10
+                input.form-control(type='text', placeholder='PostgreSQL Database URL', ng-model="backups.settings.DatabaseUrl")
+
+        .col-md-12
+          .pull-right
+            button.btn.btn-primary(ng-click='backups.saveSettings()') Save
+
+.row
+  .box-info.animated.bounceIn
+    h2 Running Jobs
+    table
+      thead
+        tr
+          th Action
+          th Enqueued at
+          th Started at
+      tbody
+        tr(ng-repeat="job in backups.stats.jobs.backups")
+          td {{job.message.args.Action}}
+          td {{job.message.enqueued_at * 1000 | date:'MM/dd/yyyy @ h:mma'}}
+          td {{job.started_at * 1000 | date:'MM/dd/yyyy @ h:mma'}}

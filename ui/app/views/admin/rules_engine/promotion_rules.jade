@@ -1,0 +1,108 @@
+.page-heading.animated.fadeInDownBig
+  h1 Promotion Rules
+    small
+.dashboard(ui-view)
+  .row
+    .col-sm-6
+      .box-info.animated.fadeInDown
+        h2 Action of Type
+        select.form-control.selectpicker(ng-model="promotionRule.newRuleType.Type",
+                                         ng-options="ruleType for ruleType in promotionRule.ruleTypes",
+                                         ng-change="promotionRule.newRuleType.PreferenceName = promotionRule.newRuleType.Type")
+          option(value="") Choose Attribution Rule Type
+        #user.box-info.collapse(ng-class="{in: promotionRule.newRuleType.Type == 'User'}")
+          form(role='form')
+            .row
+              .form-group
+                input.form-control(type='text', placeholder='User ids', ng-model="promotionRule.newRuleType.userIds")
+            .row
+              .form-group
+                button.btn.btn-sm.btn-success(type='button', ng-click="promotionRule.createNewRuleType()") Save
+                button.btn.btn-sm.btn-danger(type='button', ng-click="promotionRule.cancelNewItem(promotionRule.newRuleType)") Discard
+
+        #first-order.box-info.collapse(ng-class="{in: promotionRule.newRuleType.Type == 'FirstOrder'}")
+          form(role='form')
+            .row
+              .form-group
+                input.form-control(type='text', disabled, ng-model="promotionRule.newRuleType.PreferenceName")
+            .row
+              .form-group
+                button.btn.btn-sm.btn-success(type='button', ng-click="promotionRule.createNewRuleType()") Save
+                button.btn.btn-sm.btn-danger(type='button', ng-click="promotionRule.cancelNewItem(promotionRule.newRuleType)") Discard
+
+    .col-sm-6
+      .box-info.animated.fadeInDown
+        h2 Rule of Type
+        select.form-control.selectpicker(ng-model="promotionRule.newPreferenceType.Type",
+        ng-options="ruleType for ruleType in promotionRule.preferenceTypes")
+          option(value="") Choose Attribution Action Type
+        #create-adjusment.box-info.collapse(ng-class="{in: promotionRule.newPreferenceType.Type == 'CreateAdjustment'}")
+          form(role='form')
+            .form-group
+              select.form-control.selectpicker(ng-model="promotionRule.newPreferenceType.Calculator",
+                                               ng-options="calculator for calculator in promotionRule.adjustmentCalculators",
+                                              ng-change="promotionRule.newPreferenceType.PreferenceName = promotionRule.newPreferenceType.Calculator")
+                option(value="") Calculators
+
+            .form-group(ng-show="promotionRule.newPreferenceType.Calculator == 'FlatPercentItemTotal'")
+              input.form-control(type='text', placeholder='Preference Value', ng-model="promotionRule.newPreferenceType.PreferenceValue")
+
+            .form-group(ng-show="promotionRule.newPreferenceType.Calculator == 'Flat Rate'")
+              .form-group
+                input.form-control(type='text', placeholder='Amount')
+              .form-group
+                input.form-control(type='text', placeholder='Currency')
+
+            .form-group(ng-show="promotionRule.newPreferenceType.Calculator == 'Flexible Rate'")
+              .form-group
+                input.form-control(type='text', placeholder='First Item Cost')
+              .form-group
+                input.form-control(type='text', placeholder='Aditional Item Cost')
+              .form-group
+                input.form-control(type='text', placeholder='Max Items')
+              .form-group
+                input.form-control(type='text', placeholder='Currency')
+
+            .form-group(ng-show="promotionRule.newPreferenceType.Calculator == 'Related Product Discount'")
+              .form-group
+                input.form-control(type='text', placeholder='Item Total Threshold')
+
+            .form-group
+              .form-group
+                button.btn.btn-sm.btn-success(type='button', ng-click="promotionRule.createNewPreferenceType()") Save
+                button.btn.btn-sm.btn-danger(type='button', ng-click="promotionRule.cancelNewItem(promotionRule.newPreferenceType)") Discard
+
+  .box-info.animated.fadeInDown
+    .table
+      table.table
+        thead
+          th.col-md-10(data-sorted='false') Rule Type
+          th(data-sorted='false') Options
+        tbody
+          tr(ng-repeat="rule in promotionRule.ruleSet.Rules")
+            td {{ rule.Type}}
+            td
+              div.btn-group.btn-group-xs
+                a.btn.btn-default(data-toggle='tooltip', title='', data-original-title='Delete', ng-click="promotionRule.openDeleteModal(rule, 'Rules')")
+                  i.fa.fa-trash-o
+
+    .table
+      table.table
+        thead
+          th(data-sorted='false') Action Type
+          th(data-sorted='false') Calculator
+          th(data-sorted='false') Preference Value
+          th(data-sorted='false') Options
+        tbody
+          tr(ng-repeat="action in promotionRule.ruleSet.Actions")
+            td {{ action.Type }}
+            td {{ action.Calculator }}
+            td {{ action.PreferenceValue }}
+            td
+              div.btn-group.btn-group-xs
+                a.btn.btn-default(data-toggle='tooltip', title='', data-original-title='Delete', ng-click="promotionRule.openDeleteModal(action, 'Actions')")
+                  i.fa.fa-trash-o
+                a.btn.btn-default(data-toggle='tooltip', title='', data-original-title='Edit', ng-click="promotionRule.openEditModal(action)")
+                  i.fa.fa-edit
+
+

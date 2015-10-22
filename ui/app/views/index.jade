@@ -1,0 +1,15 @@
+doctype html
+html.no-js(data-ng-app="foxcommUiApp")
+  include admin/base
+
+  body(data-ng-class="bodyClass", class="auth")
+
+    <div ui-view></div>
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    include includes/scripts
+

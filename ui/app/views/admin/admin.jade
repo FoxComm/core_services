@@ -1,0 +1,12 @@
+.container(data-ng-controller='MainCtrl as vm')
+  .left.side-menu
+    div(data-ng-include='\'admin/sidebar.html\'')
+  .right.content-page
+    div(data-ng-include='\'admin/header.html\'')
+    <div ui-view class="body content rows scroll-y"></div>
+    footer
+      div(data-ng-include='\'admin/footer.html\'')
+  .md-overlay
+  .page-splash.dissolve-animation(data-ng-show='vm.isBusy')
+    div(data-fd-spinner='vm.spinnerOptions')
+    .page-splash-message.page-splash-message-subtle {{ vm.busyMessage }}

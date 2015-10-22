@@ -1,0 +1,34 @@
+.page-heading.animated.fadeInDownBig
+  h1 Global Configuration
+
+.row
+  .col-sm-6.col-xs-6(ng-repeat="feature in vm.features")
+    .box-info.animated.bounceIn
+      .icon-box
+        span.fa-stack
+          i.fa.fa-circle.fa-stack-2x(ng-class="{success: feature.Enabled, danger: !feature.Enabled}")
+          i.fa.fa-stack-1x.fa-inverse(ng-class="{'fa-check': feature.Enabled, 'fa-times': !feature.Enabled}")
+      .text-box.pull-left
+        h3 {{ feature.Name | snakeCaseToHuman }}
+      p.pull-right
+        i.fa.fa-power-off.fa-2x(data-ng-click="updateFeatureStatus(feature, !feature.Enabled)", ng-class="{info: feature.Enabled}")
+      .clear
+      p.text-center {{ feature.Description }}
+
+.row
+  .box-info.animated.bounceIn
+    h2 Store Configuration
+    form.form-horizontal(role="form")
+      .form-group
+        label.col-sm-2.control-label(for='input-text') Spree Token
+        .col-sm-10
+          input.form-control(type='text', placeholder='Spree Token', ng-model="vm.store.SpreeToken")
+      .form-group
+        label.col-sm-2.control-label(for='input-text') Solar Host
+        .col-sm-10
+          input.form-control(type='text', placeholder='Solar Host', ng-model="vm.store.SolrHost")
+      .pull-right
+        button.btn.btn-primary(ng-click='vm.save()', ng-disabled="vm.store == {}") Save
+        button.btn.btn-warning(ng-click='vm.cancel()') Cancel
+
+

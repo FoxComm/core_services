@@ -9,7 +9,7 @@ PSQL_FOXCOMM = psql foxcomm -c
 PSQL_FOXCOMM_TEST = psql foxcomm_test -c
 
 # Lists of services and packages to perform operations against.
-SERVICE_LIST := feature_manager router user
+SERVICE_LIST := feature_manager router user ui
 BUILD_LIST = $(foreach int, $(SERVICE_LIST), $(int)_build)
 FMT_LIST = $(foreach int, $(SERVICE_LIST), $(int)_fmt)
 

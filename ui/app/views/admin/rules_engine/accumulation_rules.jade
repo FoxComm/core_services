@@ -1,0 +1,30 @@
+.page-heading.animated.fadeInDownBig
+  h1 Accumulation Rules
+    small
+.dashboard(ui-view)
+  .box-info.full.animated.fadeInDown
+    ul.nav.nav-tabs.nav-justified
+      li(ng-repeat="action in accumulationRule.actions",
+      ng-if="accumulationRule.isValidActionRule(action.Name)",
+      ng-class='{active:$first}',
+      ng-click="accumulationRule.getByActionName(action.Name)")
+        a(data-target="#{{action.Name}}", data-toggle='tab')
+          strong {{ action.Name }}
+          | Accumulations Rules Set
+    .tab-content
+      .tab-pane.animated.fadeInRight(ng-repeat="action in accumulationRule.actions",
+                                     id="{{action.Name}}",
+                                     ng-if="accumulationRule.isValidActionRule(action.Name)",
+                                     ng-class='{active:$first}')
+        .box-info
+          .row
+            .col-sm-10
+              select.form-control.selectpicker(ng-model="accumulationRule.ruleType",
+                                               ng-options="ruleType for ruleType in accumulationRule[action.Name + 'RuleTypes']")
+                option(value="") Choose Accumulation Rule Type
+            button.btn.btn-success(type='button',
+                                   ng-click="accumulationRule.openCreateModal()",
+                                   ng-disabled="accumulationRule.ruleType == undefined")
+              i.fa.fa-plus
+              | &nbspAdd Rule
+          .table(ng-include="'admin/rules_engine/' + action.Name + '_accumulation_table.html'")

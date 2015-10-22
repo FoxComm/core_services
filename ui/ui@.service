@@ -1,0 +1,19 @@
+[Unit]
+Description=foxcomm-ui
+After=docker.service
+Requires=docker.service
+
+[Service]
+EnvironmentFile=/etc/environment
+User=core
+TimeoutStartSec=60
+ExecStartPre=-/usr/bin/docker kill foxcomm-ui-%i
+ExecStartPre=-/usr/bin/docker rm foxcomm-ui-%i
+ExecStartPre=/usr/bin/docker pull quay.io/foxcomm/ui:$VERSION$
+ExecStart=/bin/sh -c "IMAGE_ID=`/usr/bin/docker images | grep ui | grep $VERSION$ | awk '{print $3}'` && /usr/bin/docker run --name=foxcomm-ui-%i -p 0.0.0.0:600%i:600%i --env UIPort=600%i --env PRIVATE_IPV4=$COREOS_PRIVATE_IPV4 --env EtcdHost=$COREOS_PRIVATE_IPV4 --env EtcdPort=4001 $IMAGE_ID"
+ExecStop=/usr/bin/docker kill foxcomm-ui-%i
+ExecStopPost=/bin/sh -c "/usr/bin/etcdctl rm /endpoints/ui/$COREOS_PRIVATE_IPV4:600%i"
+Restart=on-failure
+
+[X-Fleet]
+Conflicts=ui*

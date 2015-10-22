@@ -1,0 +1,12 @@
+.modal-header
+  h3.modal-title {{ title }}
+.modal-body
+  form.form-horizontal(role="form")
+    .form-group
+      .col-sm-6
+        select.form-control.selectpicker(ng-model="newRule.ParentActionName",
+                                         ng-options="ParentActionName for ParentActionName in ['signup', 'signin', 'signout', 'checkout', 'referrer']")
+          option(value="") Choose Parent Action Type
+.modal-footer
+  button.btn.btn-primary(ng-click='ok()') {{ okText }}
+  button.btn.btn-warning(ng-click='cancel()') {{ cancelText }}
