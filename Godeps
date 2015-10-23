@@ -10,4 +10,5 @@ github.com/qor/qor 46b14206767518899941a503b2a47060c0ca35f7
 github.com/jinzhu/gorm b3b87d9c45675a00bc8f1bf86c0a59e1c2187f64
 github.com/FoxComm/libs/spree 409c5120890d60c3f0fee56de5b585a7862eb6f0
 github.com/kidstuff/mongostore 238d10551ec8da978f2ea7d6657ba1b47a828fdf
+github.com/mailgun/oxy/utils 988bfa0d106d2d52ffeb12a0396238e50a7fff41
 
