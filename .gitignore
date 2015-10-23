@@ -7,3 +7,5 @@ ui/ui
 ui/bower_components/
 ui/node_modules/
 backups/backups
+deployer/deployer
+deployer/fleet-backup/
