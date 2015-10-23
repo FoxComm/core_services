@@ -1,0 +1,53 @@
+- name:             Newrelic server monitoring repository
+  sudo:             true
+  apt_repository:   repo='deb http://apt.newrelic.com/debian/ newrelic non-free' state=present
+
+- name:         Newrelic GPG
+  apt_key:      url=https://download.newrelic.com/548C16BF.gpg state=present
+  sudo:         true
+
+- name:          Installing Newrelic agents prerequisites
+  sudo:          true
+  apt:           pkg={{ item }} state=latest install_recommends=no force=yes
+  with_items:
+                 - newrelic-sysmond
+                 - python-pip
+
+- name:       Newrelic server agent key
+  shell:      nrsysmond-config --set license_key={{ newrelic_key }}
+  when:       newrelic_key|default("") != ""
+  sudo:       true
+
+- name:       Newrelic server agent service
+  shell:      /etc/init.d/newrelic-sysmond restart
+  sudo:       true
+
+- name:       Install newrelic plugin agent
+  sudo:       true
+  pip:        name=newrelic-plugin-agent
+
+- name:       Look for newrelic service
+  register:   newrelic_agent_installed
+  sudo:       true
+  command:    service newrelic_plugin_agent status
+  ignore_errors: true
+
+- name:       Copy newrelic init file
+  sudo:       true
+  shell:      cp /opt/newrelic-plugin-agent/newrelic-plugin-agent.deb /etc/init.d/newrelic_plugin_agent
+  when:       newrelic_agent_installed|failed
+
+- name:       Making newrelic plugin agent service executable
+  sudo:       true
+  shell:      chmod u+x /etc/init.d/newrelic_plugin_agent
+  when:       newrelic_agent_installed|failed
+
+- name:       Registering new service
+  sudo:       true
+  shell:      chmod u+x /etc/init.d/newrelic_plugin_agent
+  when:       newrelic_agent_installed|failed
+
+- name:       Registering reloading init.d config
+  sudo:       true
+  shell:      update-rc.d newrelic_plugin_agent defaults
+  when:       newrelic_agent_installed|failed

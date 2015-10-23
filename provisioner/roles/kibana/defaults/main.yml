@@ -1,0 +1,16 @@
+---
+workspace: /tmp
+
+kibana_version: 4.1.0
+kibana_arch: x64
+
+kibana_root: /opt/kibana
+kibana_server_name: kinana.foxcommerce.com
+
+kibana_server_name: kibana
+
+elasticsearch_host: 127.0.0.1
+elasticsearch_port: 9200
+
+kibana_user: kibana
+kibana_password: 123456

@@ -1,0 +1,5 @@
+- name: Copy nginx rsyslog config file
+  template: src=nginx.conf dest=/etc/rsyslog.d/nginx.conf owner=root group=root mode=0644
+
+- name: "Restart rsyslog"
+  service: name=rsyslog state=restarted enabled=yes

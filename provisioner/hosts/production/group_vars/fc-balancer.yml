@@ -1,0 +1,2 @@
+balancer_redirections:
+  - { from: www.beautykind.us, to: 'https://beautykind.us' }

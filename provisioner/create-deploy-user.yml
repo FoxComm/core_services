@@ -1,0 +1,18 @@
+---
+- name: Create deploy group and user
+  hosts:
+    - fcdb
+    - mongodb
+    - balancer
+  user: root
+  roles:
+    - { role: deploy_user, deploy_user: deploy, deploy_groups: deploy,sudo }
+
+- name: Setup SSH access with authorized vault keys
+  hosts:
+    - fcdb
+    - mongodb
+    - balancer
+  user: root
+  roles:
+    - { role: ssh, deploy_user: deploy }

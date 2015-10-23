@@ -1,0 +1,6 @@
+---
+install_state: present
+git_update:    no
+nginx_reload:  false
+master_host:   '{{ hostvars[groups["solr-master"][0]]["private_ip_address"] }}'
+master_port:   8983

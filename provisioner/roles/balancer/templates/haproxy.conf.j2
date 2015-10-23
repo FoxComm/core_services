@@ -1,0 +1,64 @@
+global
+    log         127.0.0.1:1514 local0
+
+    chroot      /var/lib/haproxy
+    pidfile     /var/run/haproxy.pid
+    maxconn     100000
+    user        root
+    group       root
+    daemon
+
+    stats socket /var/lib/haproxy/stats level admin
+    spread-checks 4
+
+    # lower your record size to improve Time to First Byte (TTFB)
+    tune.ssl.maxrecord 1400
+
+    # set inactivity timeout to reset record size (in ms)
+    tune.idletimer 1000
+
+defaults
+    mode                    http
+    log                     global
+
+    option                  httplog
+    option                  dontlognull
+    option                  http-server-close
+    option                  forwardfor
+    option                  redispatch
+    retries                 2
+
+    timeout http-request    60s
+    timeout queue           1m
+    timeout connect         60s
+    timeout client          60s
+    timeout http-keep-alive 15s
+    timeout check           10s
+    timeout server          1m
+
+    compression algo gzip
+    compression type text/html text/html;charset=utf-8 text/plain text/css text/javascript application/x-javascript application/javascript
+
+frontend https
+    bind *:443 ssl crt /etc/ssl/certs/beautykind/ev-beautykind.us.pem crt /etc/ssl/certs/beautykind/wildcard.beautykind.us.pem npn http/1.1 no-tls-tickets no-sslv3 ciphers EECDH+aRSA+AESGCM:EECDH+aRSA+SHA384:EECDH+aRSA+SHA256:EECDH+aRSA+RC4:EECDH:EDH+aRSA:!aNULL:!eNULL:!LOW:!MEDIUM:!SEED:!3DES:!CAMELLIA:!MD5:!EXP:!PSK:!SRP:!DSS:!RC4
+    http-request set-header X-Forwarded-Proto https
+    http-request set-header X-Forwarded-Port 443
+    rspadd Strict-Transport-Security:\ max-age=31536000
+    default_backend app
+    {% for redirection in balancer_redirections %}
+    redirect prefix {{ redirection['to'] }} code 301 if { hdr(host) -i {{ redirection['from'] }} }
+    {% endfor %}
+
+frontend http
+    bind *:80
+    redirect scheme https code 301 if !{ ssl_fc }
+
+backend app
+    stats enable
+    stats uri /_fc_proxy?stats
+    stats realm   FC Proxy Stats
+    stats auth    foxcomm:haproxy
+    option httpchk GET /health_check
+    {% for host in groups['cluster'] %}
+    server {{ host }} {{ hostvars[host]['private_ip_address'] }}:8000 weight 10 check port 8000 inter 1000 rise 4 fall 2
+    {% endfor %}

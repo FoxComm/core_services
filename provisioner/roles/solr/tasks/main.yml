@@ -1,0 +1,84 @@
+- name:       Update apt cache
+  apt:        update_cache=yes cache_valid_time=3600
+
+- name:       Install solr dependencies
+  apt:        pkg={{ item }} state={{ install_state }} install_recommends=no
+  with_items:
+              - git
+              - openjdk-7-jdk
+              - maven
+
+- name:       Clone solr
+  git:        >
+              repo=https://github.com/ksclarke/solr-jetty-maven dest=/opt/solr
+              depth=1
+              update={{ git_update }}
+              version=0edcce163d69b5f0961949c15f7b718baf929b81
+  register:   solr
+
+- name:       Install Solr
+  command:    chdir=/opt/solr mvn install
+  when:       solr|changed
+
+- name:       Copy Solr configuration collection1 (schema.xml)
+  copy:       >
+              src=schema.xml
+              dest=/opt/solr/src/main/resources/solr/collection1/conf/schema.xml
+  notify:     restart solr
+
+- name:       Copy Solr configuration collection1 (solrconfig.xml)
+  template:   >
+              src=solrconfig.xml.j2
+              dest=/opt/solr/src/main/resources/solr/collection1/conf/solrconfig.xml
+  notify:     restart solr
+
+- name:       Symlink solr directory to be used as a service
+  file:       src=/opt/solr dest=/opt/solr-jetty-maven state=link
+  when:       solr|changed
+
+- name:       Symlink solr service script
+  file:       src=/opt/solr/etc/init.d/solr dest=/etc/init.d/solr state=link
+  when:       solr|changed
+
+- name:       Chown some directories to www-data (required by solr service script)
+  file:       path={{ item }} state=directory owner=www-data recurse=yes
+  with_items:
+              - /var/www
+              - /opt/solr
+
+# Ngninx basic auth for solr master
+# TODO: We should probably move this out
+- name:       Install basic auth layer for master solr via nginx
+  apt:        pkg={{ item }} state={{ install_state }} install_recommends=no
+  with_items:
+              - nginx
+              - apache2-utils
+  when:       role == "master"
+  register:   nginx
+
+- name:       Nginx configuration
+  template:   src=www.conf.j2 dest=/etc/nginx/sites-available/solr.conf
+  when:       nginx|changed or nginx_reload
+
+- name:       Nginx configuration
+  file:       src=/etc/nginx/sites-available/solr.conf dest=/etc/nginx/sites-enabled/solr.conf state=link
+  when:       nginx|changed or nginx_reload
+
+- name:       Removing default nginx config
+  file:       path=/etc/nginx/sites-enabled/default state=absent
+  when:       nginx|changed
+
+- name:       Create .htpasswd file
+  shell:      htpasswd -bcm /etc/nginx/.htpasswd master writer
+  when:       nginx|changed or nginx_reload
+
+- name:       Applying nginx config
+  service:    name=nginx state=reloaded
+  when:       nginx|changed or nginx_reload
+
+- include:    ../../common/tasks/newrelic-plugin-agent.yml
+- name:       Copy newrelic plugin agent config file
+  sudo:       true
+  template:   src=newrelic-plugin-agent.cfg.j2
+              dest=/etc/newrelic/newrelic-plugin-agent.cfg
+- include:    ../../common/tasks/newrelic-plugin-agent-actions.yml

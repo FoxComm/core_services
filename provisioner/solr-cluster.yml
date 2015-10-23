@@ -1,0 +1,17 @@
+- name:         Solr cluster provisioning - Master
+  gather_facts: false
+  hosts:        solr-master
+  sudo:         true
+  vars:
+    role: master
+  roles:
+                - solr
+
+- name:         Solr cluster provisioning - Slaves
+  gather_facts: false
+  hosts:        solr-slave
+  sudo:         true
+  vars:
+    role: slave
+  roles:
+                - solr

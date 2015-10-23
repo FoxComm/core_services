@@ -1,0 +1,8 @@
+- name: Create the deploy group
+  group: name={{ deploy_user }} system=yes state=present
+- name:       Create Deploy user
+  user:       name={{ deploy_user }} groups=sudo shell=/bin/bash state=present
+- name:       Add to own group
+  user:       name={{ deploy_user }} group=deploy append=yes 
+- name:  Ensure deploy user can sudo without password
+  lineinfile: "dest=/etc/sudoers state=present regexp='^%sudo' line='%sudo ALL=(ALL) NOPASSWD:ALL'"

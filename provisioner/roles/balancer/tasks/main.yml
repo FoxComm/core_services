@@ -1,0 +1,40 @@
+- name: add backports repo
+  sudo: true
+  apt_repository: repo="deb http://cdn.debian.net/debian wheezy-backports main" state=present
+
+- name: install HAProxy
+  sudo: true
+  apt: name={{ item }} state=installed update_cache=yes
+  with_items:
+    - haproxy
+    - socat
+
+- name: Creating beautykind ssl directory
+  shell: mkdir -p /etc/ssl/certs/beautykind
+
+- name: Write SSL EV PEM cert
+  copy: >
+    content="{{ vaulted_ev_ssl_pem }}"
+    dest=/etc/ssl/certs/beautykind/ev-beautykind.us.pem
+    owner=root
+    group=staff
+
+- name: Write SSL Star PEM cert
+  copy: >
+    content="{{ vaulted_star_ssl_pem }}"
+    dest=/etc/ssl/certs/beautykind/wildcard.beautykind.us.pem
+    owner=root
+    group=staff
+#    mode="u+rw,g+r"
+
+- name: creating HAProxy config
+  sudo: true
+  template: src=haproxy.conf.j2 dest=/etc/haproxy/haproxy.cfg
+  notify: reload haproxy
+
+- include:    ../../common/tasks/newrelic-plugin-agent.yml
+- name:       Copy newrelic plugin agent config file
+  sudo:       true
+  template:   src=newrelic-plugin-agent.cfg.j2
+              dest=/etc/newrelic/newrelic-plugin-agent.cfg
+- include:    ../../common/tasks/newrelic-plugin-agent-actions.yml

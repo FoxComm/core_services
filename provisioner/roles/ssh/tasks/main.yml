@@ -1,0 +1,4 @@
+- name:            Set up authorized_keys for users
+  authorized_key:  key='{{ item.value }}' user={{ deploy_user }} state=present
+  with_items:
+                   -  '{{ public_keys }}'

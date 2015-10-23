@@ -1,0 +1,6 @@
+rails_app_path: '/home/deploy/current'
+environment: 'staging'
+
+puma_enabled: true
+rails_enabled: true
+nginx_enabled: true

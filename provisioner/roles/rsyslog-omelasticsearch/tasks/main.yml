@@ -1,0 +1,14 @@
+- name: "Update rsyslog"
+  apt: pkg=rsyslog state=latest update_cache=yes default_release=wheezy-backports
+
+- name: "Install additional packages"
+  apt: pkg=rsyslog-elasticsearch state=installed
+
+- name: "Install rsyslog config"
+  template: src=rsyslog.conf dest=/etc/rsyslog.conf owner=root group=root mode=0644
+
+- name: "Install omelastaticsearch config"
+  template: src=omelastaticsearch.conf dest=/etc/rsyslog.d/omelastaticsearch.conf owner=root group=root mode=0644
+
+- name: "Restart rsyslog"
+  service: name=rsyslog state=restarted enabled=yes

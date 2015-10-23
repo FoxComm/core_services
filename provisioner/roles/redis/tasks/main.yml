@@ -1,0 +1,21 @@
+- name:    Update apt cache
+  sudo:    true
+  apt:     update_cache=yes cache_valid_time=3600
+
+- name:          Installing redis and its dependencies
+  sudo:          true
+  apt:           pkg={{ item }} state=latest install_recommends=no
+  with_items:
+                 - redis-server
+                 #- redis-tools
+
+- name:       Make redis to listen at the private IP
+  lineinfile: >
+    dest=/etc/elasticsearch/elasticsearch.yml
+    regexp="bind 127\.0\.0\.1"
+    line="{{ ansible_default_ipv4.address}}"
+    state=present
+
+- name:       Restart Redis
+  sudo:       true
+  service:    name=redis-server state=restarted

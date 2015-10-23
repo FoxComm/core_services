@@ -1,0 +1,6 @@
+- name: Create router_config dir
+  sudo: true
+  file: path=/home/core/router_config state=directory mode=0755 owner=core group=core
+
+- name: Create or update config for router
+  template: src=servers.toml.j2 dest=/home/core/router_config/servers.toml

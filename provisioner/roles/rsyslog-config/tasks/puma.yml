@@ -1,0 +1,5 @@
+- name: Copy puma rsyslog config file
+  template: src=puma.conf dest=/etc/rsyslog.d/puma.conf owner=root group=root mode=0644
+
+- name: "Restart rsyslog"
+  service: name=rsyslog state=restarted enabled=yes

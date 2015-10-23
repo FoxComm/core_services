@@ -1,0 +1,16 @@
+[Servers]
+{% for host in groups['spree-api-balancer'] %}
+  [[Servers.origin_frontend]] 
+    URL = "https://{{ hostvars[host]['private_ip_address'] }}:443"
+  [[Servers.origin_backend]] 
+    URL = "https://{{ hostvars[host]['private_ip_address'] }}:443"
+{% endfor %}
+
+{% for host in groups['cluster'] %}
+{% for unit in hostvars[host]['containers'] %}
+{% for ep in unit['endpoints'] %}
+  [[Servers.{{ ep['Name'] }}]]
+    URL = "http://{{ host }}:{{ep['Port']}}"
+{% endfor %}
+{% endfor %}
+{% endfor %}

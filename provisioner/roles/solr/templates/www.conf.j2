@@ -1,0 +1,36 @@
+upstream solr {
+  server 127.0.0.1:8983;
+}
+
+server {
+  listen 80;
+  server_name _;
+
+  auth_basic    "Solr Restricted";
+  auth_basic_user_file  .htpasswd;
+
+  location / {
+    proxy_pass http://solr;
+  }
+}
+
+upstream slaves {
+  {% for host in groups['solr-slaves'] %}
+  server {{ hostvars[host]['private_ip_address'] }}:8983;
+  {% endfor %}
+}
+
+server {
+  listen 8982;
+  server_name _;
+
+  location / {
+    proxy_pass http://slaves;
+  }
+
+  location /nginx_stub_status {
+    stub_status on;
+    allow 127.0.0.1;
+    deny all;
+  }
+}
