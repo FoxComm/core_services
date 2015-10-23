@@ -4,5 +4,6 @@ github.com/pivotal-golang/archiver/compressor f598990ddfeda2767a09346acf844a7d21
 github.com/mitchellh/goamz/aws caaaea8b30ee15616494ee68abd5d8ebbbef05cf
 github.com/stacktic/dropbox 2b5a13d88ec9944f36333051fb1f2d912cab54b9
 github.com/julienschmidt/httprouter 1920724575a29b4da2ac388ce9dcf2c53e2138c0
-
-
+github.com/BurntSushi/toml 056c9bc7be7190eaa7715723883caffa5f8fa3e4
+github.com/karlseguin/ccache bfa769c6b6c794afa640d7259ebc270c7da037a7
+github.com/qor/qor 46b14206767518899941a503b2a47060c0ca35f7
