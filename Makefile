@@ -3,6 +3,7 @@ GOCMD = go
 GOBUILD = $(GOCMD) build
 GOTEST = $(GOCMD) test
 GOFMT = $(GOCMD) fmt
+GOGET = $(GOCMD) get
 PKG_NAME = github.com/FoxComm/FoxComm
 PSQL_CMD = psql -t template1 -c
 PSQL_FOXCOMM = psql foxcomm -c
@@ -12,10 +13,14 @@ PSQL_FOXCOMM_TEST = psql foxcomm_test -c
 SERVICE_LIST := backups catalog_cache deployer feature_manager router user ui
 BUILD_LIST = $(foreach int, $(SERVICE_LIST), $(int)_build)
 FMT_LIST = $(foreach int, $(SERVICE_LIST), $(int)_fmt)
+GET_LIST = $(foreach int, $(SERVICE_LIST), $(int)_get)
 
 # List actions
 $(BUILD_LIST): %_build:
 	cd $* && $(GOBUILD)
+
+$(GET_LIST): %_get:
+	cd $* && $(GOGET)
 
 $(FMT_LIST): %_fmt:
 	$(GOFMT) $(PKG_NAME)/$*/...
@@ -28,7 +33,7 @@ dependencies:
 	cd $(GOPATH)
 	go get -u github.com/pilu/fresh
 	go get -u github.com/ddollar/forego
-	bundle install
+	#bundle install
 
 configure: dependencies
 	mkdir -p bin
@@ -36,6 +41,8 @@ configure: dependencies
 	chmod +x bin/gpm
 
 build: $(BUILD_LIST)
+
+get: $(GET_LIST)
 
 gpm:
 	bin/gpm
