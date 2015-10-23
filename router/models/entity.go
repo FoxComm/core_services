@@ -1,6 +1,6 @@
 package models
 
-import "github.com/FoxComm/FoxComm/spree"
+import "github.com/FoxComm/libs/spree"
 
 type Entity struct {
 	Id   int

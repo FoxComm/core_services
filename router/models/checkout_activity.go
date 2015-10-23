@@ -3,7 +3,7 @@ package models
 import (
 	"time"
 
-	"github.com/FoxComm/FoxComm/spree"
+	"github.com/FoxComm/libs/spree"
 )
 
 //I didn't want to actually store all the fields, but I ended up storing so much, that I thought to include everything.

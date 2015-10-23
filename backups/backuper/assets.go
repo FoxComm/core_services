@@ -6,7 +6,7 @@ import (
 	"os"
 	"sync"
 
-	"github.com/FoxComm/FoxComm/alerts"
+	"github.com/FoxComm/core_services/lib/alerts"
 	"github.com/FoxComm/libs/logger"
 	"github.com/stacktic/dropbox"
 )
