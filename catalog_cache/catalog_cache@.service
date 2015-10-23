@@ -1,0 +1,19 @@
+[Unit]
+Description=catalog_cache
+After=docker.service
+Requires=docker.service
+
+[Service]
+EnvironmentFile=/etc/environment
+User=core
+TimeoutStartSec=60
+ExecStartPre=-/usr/bin/docker kill catalog-cache-%i
+ExecStartPre=-/usr/bin/docker rm catalog-cache-%i
+ExecStartPre=/usr/bin/docker pull quay.io/foxcomm/catalog_cache:$VERSION$
+ExecStart=/bin/sh -c "IMAGE_ID=`/usr/bin/docker images | grep catalog_cache | grep $VERSION$ | awk '{print $3}'` && /usr/bin/docker run --name=catalog-cache-%i -p 0.0.0.0:1300%i:1300%i --env PORT=1300%i --env PRIVATE_IPV4=$COREOS_PRIVATE_IPV4 --env EtcdHost=$COREOS_PRIVATE_IPV4 --env EtcdPort=4001 --env FC_ENV=collection1 $IMAGE_ID"
+ExecStop=/usr/bin/docker kill catalog-cache-%i
+ExecStopPost=/bin/sh -c "/usr/bin/etcdctl rm /endpoints/catalog_cache/$COREOS_PRIVATE_IPV4:1300%i"
+Restart=on-failure
+
+[X-Fleet]
+Conflicts=catalog_cache*

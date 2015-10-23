@@ -1,0 +1,6 @@
+# file: balancer/handlers/main.yml
+
+- name: reload haproxy
+  service:
+    name: haproxy
+    state: reloaded

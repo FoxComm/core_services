@@ -13,7 +13,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/FoxComm/FoxComm/alerts"
+	"github.com/FoxComm/core_services/lib/alerts"
 	"github.com/FoxComm/FoxComm/configs"
 	"github.com/FoxComm/libs/logger"
 	"github.com/FoxComm/core_services/feature_manager/core"

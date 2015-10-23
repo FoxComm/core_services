@@ -1,0 +1,7 @@
+- name:         HAProxy load balancer
+  hosts:        fc-balancer
+  gather_facts: true
+  sudo:         true
+
+  roles:
+                - balancer

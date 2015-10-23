@@ -1,0 +1,8 @@
+github.com/gin-gonic/gin v0.5
+github.com/jrallison/go-workers 337a0b7bd0a4ad878d8f68e55f2208ab0889bebd
+github.com/pivotal-golang/archiver/compressor f598990ddfeda2767a09346acf844a7d216c1256
+github.com/mitchellh/goamz/aws caaaea8b30ee15616494ee68abd5d8ebbbef05cf
+github.com/stacktic/dropbox 2b5a13d88ec9944f36333051fb1f2d912cab54b9
+github.com/julienschmidt/httprouter 1920724575a29b4da2ac388ce9dcf2c53e2138c0
+
+

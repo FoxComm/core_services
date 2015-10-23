@@ -1,0 +1,51 @@
+- name: Download Kibana.
+  get_url:
+    url: "https://download.elastic.co/kibana/kibana/kibana-{{ kibana_version }}-linux-{{ kibana_arch }}.tar.gz"
+    dest: "{{ workspace }}/kibana.tar.gz"
+
+- name: Expand Kibana.
+  command: >
+    tar -C {{ workspace }} -xvzf {{ workspace }}/kibana.tar.gz
+
+- name: Move Kibana into place.
+  command: >
+    mv {{ workspace }}/kibana-{{ kibana_version }}-linux-{{ kibana_arch }} {{ kibana_root }}
+
+- name: Move Kibana config into place.
+  template: src=kibana.yml dest=/opt/kibana/config/kibana.yml owner=root group=root mode=0644
+
+- name: Move Elasticsearch config into place.
+  template: src=elasticsearch.yml dest=/etc/elasticsearch/elasticsearch.yml owner=root group=root mode=0644
+  notify: restart elasticsearch
+
+- name: Create RC file
+  template: src=kibana4 dest=/etc/init.d/kibana4 owner=root group=root mode=755
+
+- name: Register RC file
+  command: >
+    update-rc.d kibana4 defaults 96 9
+
+- name: Start service
+  command: >
+    service kibana4 start
+
+- name: Install apache utils
+  apt: name=apache2-utils state=present
+
+- name: Set htpasswd for authentication
+  command: >
+    htpasswd -bc /etc/nginx/htpasswd.users {{ kibana_user }} {{ kibana_password }}
+
+- name: Remove default nginx config
+  file: path=/etc/nginx/sites-available/default state=absent
+  file: path=/etc/nginx/sites-enabled/default state=absent
+
+- name: Install nginx http config
+  template: src=kibana.conf dest=/etc/nginx/sites-available/kibana.conf owner=root group=root mode=0644
+
+- name: Link nginx config
+  file: src=/etc/nginx/sites-available/kibana.conf dest=/etc/nginx/sites-enabled/kibana.conf owner=root group=root state=link
+  notify: restart nginx
+
+- name: Ensure Kibana is started and enabled on boot.
+  service: name=kibana4 state=started enabled=yes

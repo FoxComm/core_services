@@ -1,0 +1,3 @@
+- name:       Restarting newrelic plugin agent service
+  sudo:       true
+  service:    name=newrelic_plugin_agent state=restarted

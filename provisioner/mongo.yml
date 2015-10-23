@@ -1,0 +1,9 @@
+- name: MongoDB
+  hosts: mongodb
+  sudo: yes
+  pre_tasks:
+    - name: mongodb | install requirements
+      apt: pkg=python-pycurl state=latest update_cache=yes
+      tags: mongodb
+  roles:
+    -  mongodb

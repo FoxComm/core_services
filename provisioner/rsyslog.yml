@@ -1,0 +1,8 @@
+- name:         rsyslog configuration
+  hosts:        rsyslog
+  sudo:         true
+
+  roles:
+    - { role: jnv.debian-backports }
+    - { role: rsyslog-omelasticsearch }
+    - { role: rsyslog-config }

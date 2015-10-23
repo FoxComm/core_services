@@ -1,0 +1,4 @@
+- name:  PostgreSQL
+  hosts: fcdb
+  roles:
+    - { role: postgresql, sudo: yes }

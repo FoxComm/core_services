@@ -1,0 +1,2104 @@
+{
+    "count": 16,
+    "total_count": 16,
+    "current_page": 1,
+    "per_page": 30,
+    "pages": 1,
+    "results": [
+        {
+            "id": 1,
+            "name": "Ruby on Rails Tote",
+            "brand": "Rails",
+            "price": 15.99,
+            "taxons": [
+                "Bags",
+                "Rails"
+            ],
+            "taxon_ids": [
+                82,
+                90
+            ],
+            "similar_products_ids": null,
+            "description": "Officia et at enim. Dolor dolorum totam magnam. Minima perferendis voluptatum eos ab esse et et quis.",
+            "slug": "ruby-on-rails-tote",
+            "master": {
+                "id": 1,
+                "is_master": true,
+                "options_text": "",
+                "sku": "ROR-00011",
+                "position": 1,
+                "price": "15.99",
+                "slug": "ruby-on-rails-tote",
+                "in_stock": true,
+                "images": [
+                    {
+                        "id": 21,
+                        "position": 1,
+                        "alt": null,
+                        "mini_url": "/spree/products/21/mini/ror_tote.jpeg?1406650883",
+                        "small_url": "/spree/products/21/small/ror_tote.jpeg?1406650883",
+                        "medium_url": "/spree/products/21/medium/ror_tote.jpeg?1406650883",
+                        "product_url": "/spree/products/21/product/ror_tote.jpeg?1406650883",
+                        "large_url": "/spree/products/21/large/ror_tote.jpeg?1406650883",
+                        "original_url": "/spree/products/21/original/ror_tote.jpeg?1406650883"
+                    },
+                    {
+                        "id": 22,
+                        "position": 2,
+                        "alt": null,
+                        "mini_url": "/spree/products/22/mini/ror_tote_back.jpeg?1406650884",
+                        "small_url": "/spree/products/22/small/ror_tote_back.jpeg?1406650884",
+                        "medium_url": "/spree/products/22/medium/ror_tote_back.jpeg?1406650884",
+                        "product_url": "/spree/products/22/product/ror_tote_back.jpeg?1406650884",
+                        "large_url": "/spree/products/22/large/ror_tote_back.jpeg?1406650884",
+                        "original_url": "/spree/products/22/original/ror_tote_back.jpeg?1406650884"
+                    }
+                ],
+                "option_values": []
+            },
+            "variants": [],
+            "product_properties": [
+                {
+                    "id": 25,
+                    "name": "Type",
+                    "value": "Tote",
+                    "$type": "ProductProperty:#Foundationall"
+                },
+                {
+                    "id": 26,
+                    "name": "Size",
+                    "value": "15\" x 18\" x 6\"",
+                    "$type": "ProductProperty:#Foundationall"
+                },
+                {
+                    "id": 27,
+                    "name": "Material",
+                    "value": "Canvas",
+                    "$type": "ProductProperty:#Foundationall"
+                }
+            ],
+            "option_types": []
+        },
+        {
+            "id": 2,
+            "name": "Ruby on Rails Bag",
+            "brand": "Rails",
+            "price": 22.99,
+            "taxons": [
+                "Bags",
+                "Rails"
+            ],
+            "taxon_ids": [
+                82,
+                90
+            ],
+            "similar_products_ids": null,
+            "description": "Officia et at enim. Dolor dolorum totam magnam. Minima perferendis voluptatum eos ab esse et et quis.",
+            "slug": "ruby-on-rails-bag",
+            "master": {
+                "id": 2,
+                "is_master": true,
+                "options_text": "",
+                "sku": "ROR-00012",
+                "position": 1,
+                "price": "22.99",
+                "slug": "ruby-on-rails-bag",
+                "in_stock": true,
+                "images": [
+                    {
+                        "id": 23,
+                        "position": 1,
+                        "alt": null,
+                        "mini_url": "/spree/products/23/mini/ror_bag.jpeg?1406650885",
+                        "small_url": "/spree/products/23/small/ror_bag.jpeg?1406650885",
+                        "medium_url": "/spree/products/23/medium/ror_bag.jpeg?1406650885",
+                        "product_url": "/spree/products/23/product/ror_bag.jpeg?1406650885",
+                        "large_url": "/spree/products/23/large/ror_bag.jpeg?1406650885",
+                        "original_url": "/spree/products/23/original/ror_bag.jpeg?1406650885"
+                    }
+                ],
+                "option_values": []
+            },
+            "variants": [],
+            "product_properties": [
+                {
+                    "id": 28,
+                    "name": "Type",
+                    "value": "Messenger",
+                    "$type": "ProductProperty:#Foundationall"
+                },
+                {
+                    "id": 29,
+                    "name": "Size",
+                    "value": "14 1/2\" x 12\" x 5\"",
+                    "$type": "ProductProperty:#Foundationall"
+                },
+                {
+                    "id": 30,
+                    "name": "Material",
+                    "value": "600 Denier Polyester",
+                    "$type": "ProductProperty:#Foundationall"
+                }
+            ],
+            "option_types": []
+        },
+        {
+            "id": 3,
+            "name": "Ruby on Rails Baseball Jersey",
+            "brand": "Rails",
+            "price": 19.99,
+            "taxons": [
+                "T-Shirts",
+                "Rails"
+            ],
+            "taxon_ids": [
+                86,
+                90
+            ],
+            "similar_products_ids": null,
+            "description": "Officia et at enim. Dolor dolorum totam magnam. Minima perferendis voluptatum eos ab esse et et quis.",
+            "slug": "ruby-on-rails-baseball-jersey",
+            "master": {
+                "id": 3,
+                "is_master": true,
+                "options_text": "",
+                "sku": "ROR-001",
+                "position": 1,
+                "price": "19.99",
+                "slug": "ruby-on-rails-baseball-jersey",
+                "in_stock": true,
+                "images": [
+                    {
+                        "id": 24,
+                        "position": 1,
+                        "alt": null,
+                        "mini_url": "/spree/products/24/mini/ror_baseball.jpeg?1406650886",
+                        "small_url": "/spree/products/24/small/ror_baseball.jpeg?1406650886",
+                        "medium_url": "/spree/products/24/medium/ror_baseball.jpeg?1406650886",
+                        "product_url": "/spree/products/24/product/ror_baseball.jpeg?1406650886",
+                        "large_url": "/spree/products/24/large/ror_baseball.jpeg?1406650886",
+                        "original_url": "/spree/products/24/original/ror_baseball.jpeg?1406650886"
+                    },
+                    {
+                        "id": 25,
+                        "position": 2,
+                        "alt": null,
+                        "mini_url": "/spree/products/25/mini/ror_baseball_back.jpeg?1406650887",
+                        "small_url": "/spree/products/25/small/ror_baseball_back.jpeg?1406650887",
+                        "medium_url": "/spree/products/25/medium/ror_baseball_back.jpeg?1406650887",
+                        "product_url": "/spree/products/25/product/ror_baseball_back.jpeg?1406650887",
+                        "large_url": "/spree/products/25/large/ror_baseball_back.jpeg?1406650887",
+                        "original_url": "/spree/products/25/original/ror_baseball_back.jpeg?1406650887"
+                    }
+                ],
+                "option_values": []
+            },
+            "variants": [
+                {
+                    "id": 17,
+                    "is_master": false,
+                    "options_text": "Size: S, Color: Red",
+                    "sku": "ROR-00001",
+                    "position": 1,
+                    "price": "19.99",
+                    "slug": "ruby-on-rails-baseball-jersey",
+                    "in_stock": true,
+                    "images": [
+                        {
+                            "id": 1,
+                            "position": 1,
+                            "alt": null,
+                            "mini_url": "/spree/products/1/mini/ror_baseball_jersey_red.png?1406650854",
+                            "small_url": "/spree/products/1/small/ror_baseball_jersey_red.png?1406650854",
+                            "medium_url": "/spree/products/1/medium/ror_baseball_jersey_red.png?1406650854",
+                            "product_url": "/spree/products/1/product/ror_baseball_jersey_red.png?1406650854",
+                            "large_url": "/spree/products/1/large/ror_baseball_jersey_red.png?1406650854",
+                            "original_url": "/spree/products/1/original/ror_baseball_jersey_red.png?1406650854"
+                        },
+                        {
+                            "id": 2,
+                            "position": 2,
+                            "alt": null,
+                            "mini_url": "/spree/products/2/mini/ror_baseball_jersey_back_red.png?1406650856",
+                            "small_url": "/spree/products/2/small/ror_baseball_jersey_back_red.png?1406650856",
+                            "medium_url": "/spree/products/2/medium/ror_baseball_jersey_back_red.png?1406650856",
+                            "product_url": "/spree/products/2/product/ror_baseball_jersey_back_red.png?1406650856",
+                            "large_url": "/spree/products/2/large/ror_baseball_jersey_back_red.png?1406650856",
+                            "original_url": "/spree/products/2/original/ror_baseball_jersey_back_red.png?1406650856"
+                        }
+                    ],
+                    "option_values": [
+                        {
+                            "id": 1,
+                            "position": 1,
+                            "name": "Small",
+                            "presentation": "S",
+                            "option_type_id": 1,
+                            "created_at": "2014-07-29T16:20:44.291Z",
+                            "updated_at": "2014-07-29T16:20:44.291Z",
+                            "image_file_name": null,
+                            "image_content_type": null,
+                            "image_file_size": null,
+                            "image_updated_at": null,
+                            "ar_association_key_name": "17"
+                        },
+                        {
+                            "id": 5,
+                            "position": 1,
+                            "name": "Red",
+                            "presentation": "Red",
+                            "option_type_id": 2,
+                            "created_at": "2014-07-29T16:20:44.334Z",
+                            "updated_at": "2014-07-29T16:20:44.334Z",
+                            "image_file_name": null,
+                            "image_content_type": null,
+                            "image_file_size": null,
+                            "image_updated_at": null,
+                            "ar_association_key_name": "17"
+                        }
+                    ],
+                    "$type": "Variant:#Foundationall"
+                },
+                {
+                    "id": 18,
+                    "is_master": false,
+                    "options_text": "Size: S, Color: Blue",
+                    "sku": "ROR-00002",
+                    "position": 2,
+                    "price": "19.99",
+                    "slug": "ruby-on-rails-baseball-jersey",
+                    "in_stock": true,
+                    "images": [
+                        {
+                            "id": 3,
+                            "position": 1,
+                            "alt": null,
+                            "mini_url": "/spree/products/3/mini/ror_baseball_jersey_blue.png?1406650857",
+                            "small_url": "/spree/products/3/small/ror_baseball_jersey_blue.png?1406650857",
+                            "medium_url": "/spree/products/3/medium/ror_baseball_jersey_blue.png?1406650857",
+                            "product_url": "/spree/products/3/product/ror_baseball_jersey_blue.png?1406650857",
+                            "large_url": "/spree/products/3/large/ror_baseball_jersey_blue.png?1406650857",
+                            "original_url": "/spree/products/3/original/ror_baseball_jersey_blue.png?1406650857"
+                        },
+                        {
+                            "id": 4,
+                            "position": 2,
+                            "alt": null,
+                            "mini_url": "/spree/products/4/mini/ror_baseball_jersey_back_blue.png?1406650859",
+                            "small_url": "/spree/products/4/small/ror_baseball_jersey_back_blue.png?1406650859",
+                            "medium_url": "/spree/products/4/medium/ror_baseball_jersey_back_blue.png?1406650859",
+                            "product_url": "/spree/products/4/product/ror_baseball_jersey_back_blue.png?1406650859",
+                            "large_url": "/spree/products/4/large/ror_baseball_jersey_back_blue.png?1406650859",
+                            "original_url": "/spree/products/4/original/ror_baseball_jersey_back_blue.png?1406650859"
+                        }
+                    ],
+                    "option_values": [
+                        {
+                            "id": 1,
+                            "position": 1,
+                            "name": "Small",
+                            "presentation": "S",
+                            "option_type_id": 1,
+                            "created_at": "2014-07-29T16:20:44.291Z",
+                            "updated_at": "2014-07-29T16:20:44.291Z",
+                            "image_file_name": null,
+                            "image_content_type": null,
+                            "image_file_size": null,
+                            "image_updated_at": null,
+                            "ar_association_key_name": "17"
+                        },
+                        {
+                            "id": 7,
+                            "position": 3,
+                            "name": "Blue",
+                            "presentation": "Blue",
+                            "option_type_id": 2,
+                            "created_at": "2014-07-29T16:20:44.350Z",
+                            "updated_at": "2014-07-29T16:20:44.350Z",
+                            "image_file_name": null,
+                            "image_content_type": null,
+                            "image_file_size": null,
+                            "image_updated_at": null,
+                            "ar_association_key_name": "18"
+                        }
+                    ],
+                    "$type": "Variant:#Foundationall"
+                },
+                {
+                    "id": 19,
+                    "is_master": false,
+                    "options_text": "Size: S, Color: Green",
+                    "sku": "ROR-00003",
+                    "position": 3,
+                    "price": "19.99",
+                    "slug": "ruby-on-rails-baseball-jersey",
+                    "in_stock": true,
+                    "images": [
+                        {
+                            "id": 5,
+                            "position": 1,
+                            "alt": null,
+                            "mini_url": "/spree/products/5/mini/ror_baseball_jersey_green.png?1406650860",
+                            "small_url": "/spree/products/5/small/ror_baseball_jersey_green.png?1406650860",
+                            "medium_url": "/spree/products/5/medium/ror_baseball_jersey_green.png?1406650860",
+                            "product_url": "/spree/products/5/product/ror_baseball_jersey_green.png?1406650860",
+                            "large_url": "/spree/products/5/large/ror_baseball_jersey_green.png?1406650860",
+                            "original_url": "/spree/products/5/original/ror_baseball_jersey_green.png?1406650860"
+                        },
+                        {
+                            "id": 6,
+                            "position": 2,
+                            "alt": null,
+                            "mini_url": "/spree/products/6/mini/ror_baseball_jersey_back_green.png?1406650862",
+                            "small_url": "/spree/products/6/small/ror_baseball_jersey_back_green.png?1406650862",
+                            "medium_url": "/spree/products/6/medium/ror_baseball_jersey_back_green.png?1406650862",
+                            "product_url": "/spree/products/6/product/ror_baseball_jersey_back_green.png?1406650862",
+                            "large_url": "/spree/products/6/large/ror_baseball_jersey_back_green.png?1406650862",
+                            "original_url": "/spree/products/6/original/ror_baseball_jersey_back_green.png?1406650862"
+                        }
+                    ],
+                    "option_values": [
+                        {
+                            "id": 1,
+                            "position": 1,
+                            "name": "Small",
+                            "presentation": "S",
+                            "option_type_id": 1,
+                            "created_at": "2014-07-29T16:20:44.291Z",
+                            "updated_at": "2014-07-29T16:20:44.291Z",
+                            "image_file_name": null,
+                            "image_content_type": null,
+                            "image_file_size": null,
+                            "image_updated_at": null,
+                            "ar_association_key_name": "17"
+                        },
+                        {
+                            "id": 6,
+                            "position": 2,
+                            "name": "Green",
+                            "presentation": "Green",
+                            "option_type_id": 2,
+                            "created_at": "2014-07-29T16:20:44.342Z",
+                            "updated_at": "2014-07-29T16:20:44.342Z",
+                            "image_file_name": null,
+                            "image_content_type": null,
+                            "image_file_size": null,
+                            "image_updated_at": null,
+                            "ar_association_key_name": "19"
+                        }
+                    ],
+                    "$type": "Variant:#Foundationall"
+                },
+                {
+                    "id": 20,
+                    "is_master": false,
+                    "options_text": "Size: M, Color: Red",
+                    "sku": "ROR-00004",
+                    "position": 4,
+                    "price": "19.99",
+                    "slug": "ruby-on-rails-baseball-jersey",
+                    "in_stock": true,
+                    "images": [
+                        {
+                            "id": 7,
+                            "position": 1,
+                            "alt": null,
+                            "mini_url": "/spree/products/7/mini/ror_baseball_jersey_red.png?1406650864",
+                            "small_url": "/spree/products/7/small/ror_baseball_jersey_red.png?1406650864",
+                            "medium_url": "/spree/products/7/medium/ror_baseball_jersey_red.png?1406650864",
+                            "product_url": "/spree/products/7/product/ror_baseball_jersey_red.png?1406650864",
+                            "large_url": "/spree/products/7/large/ror_baseball_jersey_red.png?1406650864",
+                            "original_url": "/spree/products/7/original/ror_baseball_jersey_red.png?1406650864"
+                        },
+                        {
+                            "id": 8,
+                            "position": 2,
+                            "alt": null,
+                            "mini_url": "/spree/products/8/mini/ror_baseball_jersey_back_red.png?1406650866",
+                            "small_url": "/spree/products/8/small/ror_baseball_jersey_back_red.png?1406650866",
+                            "medium_url": "/spree/products/8/medium/ror_baseball_jersey_back_red.png?1406650866",
+                            "product_url": "/spree/products/8/product/ror_baseball_jersey_back_red.png?1406650866",
+                            "large_url": "/spree/products/8/large/ror_baseball_jersey_back_red.png?1406650866",
+                            "original_url": "/spree/products/8/original/ror_baseball_jersey_back_red.png?1406650866"
+                        }
+                    ],
+                    "option_values": [
+                        {
+                            "id": 2,
+                            "position": 2,
+                            "name": "Medium",
+                            "presentation": "M",
+                            "option_type_id": 1,
+                            "created_at": "2014-07-29T16:20:44.313Z",
+                            "updated_at": "2014-07-29T16:20:44.313Z",
+                            "image_file_name": null,
+                            "image_content_type": null,
+                            "image_file_size": null,
+                            "image_updated_at": null,
+                            "ar_association_key_name": "20"
+                        },
+                        {
+                            "id": 5,
+                            "position": 1,
+                            "name": "Red",
+                            "presentation": "Red",
+                            "option_type_id": 2,
+                            "created_at": "2014-07-29T16:20:44.334Z",
+                            "updated_at": "2014-07-29T16:20:44.334Z",
+                            "image_file_name": null,
+                            "image_content_type": null,
+                            "image_file_size": null,
+                            "image_updated_at": null,
+                            "ar_association_key_name": "17"
+                        }
+                    ],
+                    "$type": "Variant:#Foundationall"
+                },
+                {
+                    "id": 21,
+                    "is_master": false,
+                    "options_text": "Size: M, Color: Blue",
+                    "sku": "ROR-00005",
+                    "position": 5,
+                    "price": "19.99",
+                    "slug": "ruby-on-rails-baseball-jersey",
+                    "in_stock": true,
+                    "images": [
+                        {
+                            "id": 9,
+                            "position": 1,
+                            "alt": null,
+                            "mini_url": "/spree/products/9/mini/ror_baseball_jersey_blue.png?1406650867",
+                            "small_url": "/spree/products/9/small/ror_baseball_jersey_blue.png?1406650867",
+                            "medium_url": "/spree/products/9/medium/ror_baseball_jersey_blue.png?1406650867",
+                            "product_url": "/spree/products/9/product/ror_baseball_jersey_blue.png?1406650867",
+                            "large_url": "/spree/products/9/large/ror_baseball_jersey_blue.png?1406650867",
+                            "original_url": "/spree/products/9/original/ror_baseball_jersey_blue.png?1406650867"
+                        },
+                        {
+                            "id": 10,
+                            "position": 2,
+                            "alt": null,
+                            "mini_url": "/spree/products/10/mini/ror_baseball_jersey_back_blue.png?1406650869",
+                            "small_url": "/spree/products/10/small/ror_baseball_jersey_back_blue.png?1406650869",
+                            "medium_url": "/spree/products/10/medium/ror_baseball_jersey_back_blue.png?1406650869",
+                            "product_url": "/spree/products/10/product/ror_baseball_jersey_back_blue.png?1406650869",
+                            "large_url": "/spree/products/10/large/ror_baseball_jersey_back_blue.png?1406650869",
+                            "original_url": "/spree/products/10/original/ror_baseball_jersey_back_blue.png?1406650869"
+                        }
+                    ],
+                    "option_values": [
+                        {
+                            "id": 2,
+                            "position": 2,
+                            "name": "Medium",
+                            "presentation": "M",
+                            "option_type_id": 1,
+                            "created_at": "2014-07-29T16:20:44.313Z",
+                            "updated_at": "2014-07-29T16:20:44.313Z",
+                            "image_file_name": null,
+                            "image_content_type": null,
+                            "image_file_size": null,
+                            "image_updated_at": null,
+                            "ar_association_key_name": "20"
+                        },
+                        {
+                            "id": 7,
+                            "position": 3,
+                            "name": "Blue",
+                            "presentation": "Blue",
+                            "option_type_id": 2,
+                            "created_at": "2014-07-29T16:20:44.350Z",
+                            "updated_at": "2014-07-29T16:20:44.350Z",
+                            "image_file_name": null,
+                            "image_content_type": null,
+                            "image_file_size": null,
+                            "image_updated_at": null,
+                            "ar_association_key_name": "18"
+                        }
+                    ],
+                    "$type": "Variant:#Foundationall"
+                },
+                {
+                    "id": 22,
+                    "is_master": false,
+                    "options_text": "Size: M, Color: Green",
+                    "sku": "ROR-00006",
+                    "position": 6,
+                    "price": "19.99",
+                    "slug": "ruby-on-rails-baseball-jersey",
+                    "in_stock": true,
+                    "images": [
+                        {
+                            "id": 11,
+                            "position": 1,
+                            "alt": null,
+                            "mini_url": "/spree/products/11/mini/ror_baseball_jersey_green.png?1406650871",
+                            "small_url": "/spree/products/11/small/ror_baseball_jersey_green.png?1406650871",
+                            "medium_url": "/spree/products/11/medium/ror_baseball_jersey_green.png?1406650871",
+                            "product_url": "/spree/products/11/product/ror_baseball_jersey_green.png?1406650871",
+                            "large_url": "/spree/products/11/large/ror_baseball_jersey_green.png?1406650871",
+                            "original_url": "/spree/products/11/original/ror_baseball_jersey_green.png?1406650871"
+                        },
+                        {
+                            "id": 12,
+                            "position": 2,
+                            "alt": null,
+                            "mini_url": "/spree/products/12/mini/ror_baseball_jersey_back_green.png?1406650872",
+                            "small_url": "/spree/products/12/small/ror_baseball_jersey_back_green.png?1406650872",
+                            "medium_url": "/spree/products/12/medium/ror_baseball_jersey_back_green.png?1406650872",
+                            "product_url": "/spree/products/12/product/ror_baseball_jersey_back_green.png?1406650872",
+                            "large_url": "/spree/products/12/large/ror_baseball_jersey_back_green.png?1406650872",
+                            "original_url": "/spree/products/12/original/ror_baseball_jersey_back_green.png?1406650872"
+                        }
+                    ],
+                    "option_values": [
+                        {
+                            "id": 2,
+                            "position": 2,
+                            "name": "Medium",
+                            "presentation": "M",
+                            "option_type_id": 1,
+                            "created_at": "2014-07-29T16:20:44.313Z",
+                            "updated_at": "2014-07-29T16:20:44.313Z",
+                            "image_file_name": null,
+                            "image_content_type": null,
+                            "image_file_size": null,
+                            "image_updated_at": null,
+                            "ar_association_key_name": "20"
+                        },
+                        {
+                            "id": 6,
+                            "position": 2,
+                            "name": "Green",
+                            "presentation": "Green",
+                            "option_type_id": 2,
+                            "created_at": "2014-07-29T16:20:44.342Z",
+                            "updated_at": "2014-07-29T16:20:44.342Z",
+                            "image_file_name": null,
+                            "image_content_type": null,
+                            "image_file_size": null,
+                            "image_updated_at": null,
+                            "ar_association_key_name": "19"
+                        }
+                    ],
+                    "$type": "Variant:#Foundationall"
+                },
+                {
+                    "id": 23,
+                    "is_master": false,
+                    "options_text": "Size: L, Color: Red",
+                    "sku": "ROR-00007",
+                    "position": 7,
+                    "price": "19.99",
+                    "slug": "ruby-on-rails-baseball-jersey",
+                    "in_stock": true,
+                    "images": [
+                        {
+                            "id": 13,
+                            "position": 1,
+                            "alt": null,
+                            "mini_url": "/spree/products/13/mini/ror_baseball_jersey_red.png?1406650874",
+                            "small_url": "/spree/products/13/small/ror_baseball_jersey_red.png?1406650874",
+                            "medium_url": "/spree/products/13/medium/ror_baseball_jersey_red.png?1406650874",
+                            "product_url": "/spree/products/13/product/ror_baseball_jersey_red.png?1406650874",
+                            "large_url": "/spree/products/13/large/ror_baseball_jersey_red.png?1406650874",
+                            "original_url": "/spree/products/13/original/ror_baseball_jersey_red.png?1406650874"
+                        },
+                        {
+                            "id": 14,
+                            "position": 2,
+                            "alt": null,
+                            "mini_url": "/spree/products/14/mini/ror_baseball_jersey_back_red.png?1406650876",
+                            "small_url": "/spree/products/14/small/ror_baseball_jersey_back_red.png?1406650876",
+                            "medium_url": "/spree/products/14/medium/ror_baseball_jersey_back_red.png?1406650876",
+                            "product_url": "/spree/products/14/product/ror_baseball_jersey_back_red.png?1406650876",
+                            "large_url": "/spree/products/14/large/ror_baseball_jersey_back_red.png?1406650876",
+                            "original_url": "/spree/products/14/original/ror_baseball_jersey_back_red.png?1406650876"
+                        }
+                    ],
+                    "option_values": [
+                        {
+                            "id": 3,
+                            "position": 3,
+                            "name": "Large",
+                            "presentation": "L",
+                            "option_type_id": 1,
+                            "created_at": "2014-07-29T16:20:44.320Z",
+                            "updated_at": "2014-07-29T16:20:44.320Z",
+                            "image_file_name": null,
+                            "image_content_type": null,
+                            "image_file_size": null,
+                            "image_updated_at": null,
+                            "ar_association_key_name": "23"
+                        },
+                        {
+                            "id": 5,
+                            "position": 1,
+                            "name": "Red",
+                            "presentation": "Red",
+                            "option_type_id": 2,
+                            "created_at": "2014-07-29T16:20:44.334Z",
+                            "updated_at": "2014-07-29T16:20:44.334Z",
+                            "image_file_name": null,
+                            "image_content_type": null,
+                            "image_file_size": null,
+                            "image_updated_at": null,
+                            "ar_association_key_name": "17"
+                        }
+                    ],
+                    "$type": "Variant:#Foundationall"
+                },
+                {
+                    "id": 24,
+                    "is_master": false,
+                    "options_text": "Size: L, Color: Blue",
+                    "sku": "ROR-00008",
+                    "position": 8,
+                    "price": "19.99",
+                    "slug": "ruby-on-rails-baseball-jersey",
+                    "in_stock": true,
+                    "images": [
+                        {
+                            "id": 15,
+                            "position": 1,
+                            "alt": null,
+                            "mini_url": "/spree/products/15/mini/ror_baseball_jersey_blue.png?1406650877",
+                            "small_url": "/spree/products/15/small/ror_baseball_jersey_blue.png?1406650877",
+                            "medium_url": "/spree/products/15/medium/ror_baseball_jersey_blue.png?1406650877",
+                            "product_url": "/spree/products/15/product/ror_baseball_jersey_blue.png?1406650877",
+                            "large_url": "/spree/products/15/large/ror_baseball_jersey_blue.png?1406650877",
+                            "original_url": "/spree/products/15/original/ror_baseball_jersey_blue.png?1406650877"
+                        },
+                        {
+                            "id": 16,
+                            "position": 2,
+                            "alt": null,
+                            "mini_url": "/spree/products/16/mini/ror_baseball_jersey_back_blue.png?1406650878",
+                            "small_url": "/spree/products/16/small/ror_baseball_jersey_back_blue.png?1406650878",
+                            "medium_url": "/spree/products/16/medium/ror_baseball_jersey_back_blue.png?1406650878",
+                            "product_url": "/spree/products/16/product/ror_baseball_jersey_back_blue.png?1406650878",
+                            "large_url": "/spree/products/16/large/ror_baseball_jersey_back_blue.png?1406650878",
+                            "original_url": "/spree/products/16/original/ror_baseball_jersey_back_blue.png?1406650878"
+                        }
+                    ],
+                    "option_values": [
+                        {
+                            "id": 3,
+                            "position": 3,
+                            "name": "Large",
+                            "presentation": "L",
+                            "option_type_id": 1,
+                            "created_at": "2014-07-29T16:20:44.320Z",
+                            "updated_at": "2014-07-29T16:20:44.320Z",
+                            "image_file_name": null,
+                            "image_content_type": null,
+                            "image_file_size": null,
+                            "image_updated_at": null,
+                            "ar_association_key_name": "23"
+                        },
+                        {
+                            "id": 7,
+                            "position": 3,
+                            "name": "Blue",
+                            "presentation": "Blue",
+                            "option_type_id": 2,
+                            "created_at": "2014-07-29T16:20:44.350Z",
+                            "updated_at": "2014-07-29T16:20:44.350Z",
+                            "image_file_name": null,
+                            "image_content_type": null,
+                            "image_file_size": null,
+                            "image_updated_at": null,
+                            "ar_association_key_name": "18"
+                        }
+                    ],
+                    "$type": "Variant:#Foundationall"
+                },
+                {
+                    "id": 25,
+                    "is_master": false,
+                    "options_text": "Size: L, Color: Green",
+                    "sku": "ROR-00009",
+                    "position": 9,
+                    "price": "19.99",
+                    "slug": "ruby-on-rails-baseball-jersey",
+                    "in_stock": true,
+                    "images": [
+                        {
+                            "id": 17,
+                            "position": 1,
+                            "alt": null,
+                            "mini_url": "/spree/products/17/mini/ror_baseball_jersey_green.png?1406650879",
+                            "small_url": "/spree/products/17/small/ror_baseball_jersey_green.png?1406650879",
+                            "medium_url": "/spree/products/17/medium/ror_baseball_jersey_green.png?1406650879",
+                            "product_url": "/spree/products/17/product/ror_baseball_jersey_green.png?1406650879",
+                            "large_url": "/spree/products/17/large/ror_baseball_jersey_green.png?1406650879",
+                            "original_url": "/spree/products/17/original/ror_baseball_jersey_green.png?1406650879"
+                        },
+                        {
+                            "id": 18,
+                            "position": 2,
+                            "alt": null,
+                            "mini_url": "/spree/products/18/mini/ror_baseball_jersey_back_green.png?1406650880",
+                            "small_url": "/spree/products/18/small/ror_baseball_jersey_back_green.png?1406650880",
+                            "medium_url": "/spree/products/18/medium/ror_baseball_jersey_back_green.png?1406650880",
+                            "product_url": "/spree/products/18/product/ror_baseball_jersey_back_green.png?1406650880",
+                            "large_url": "/spree/products/18/large/ror_baseball_jersey_back_green.png?1406650880",
+                            "original_url": "/spree/products/18/original/ror_baseball_jersey_back_green.png?1406650880"
+                        }
+                    ],
+                    "option_values": [
+                        {
+                            "id": 3,
+                            "position": 3,
+                            "name": "Large",
+                            "presentation": "L",
+                            "option_type_id": 1,
+                            "created_at": "2014-07-29T16:20:44.320Z",
+                            "updated_at": "2014-07-29T16:20:44.320Z",
+                            "image_file_name": null,
+                            "image_content_type": null,
+                            "image_file_size": null,
+                            "image_updated_at": null,
+                            "ar_association_key_name": "23"
+                        },
+                        {
+                            "id": 6,
+                            "position": 2,
+                            "name": "Green",
+                            "presentation": "Green",
+                            "option_type_id": 2,
+                            "created_at": "2014-07-29T16:20:44.342Z",
+                            "updated_at": "2014-07-29T16:20:44.342Z",
+                            "image_file_name": null,
+                            "image_content_type": null,
+                            "image_file_size": null,
+                            "image_updated_at": null,
+                            "ar_association_key_name": "19"
+                        }
+                    ],
+                    "$type": "Variant:#Foundationall"
+                },
+                {
+                    "id": 26,
+                    "is_master": false,
+                    "options_text": "Size: XL, Color: Green",
+                    "sku": "ROR-00012",
+                    "position": 10,
+                    "price": "19.99",
+                    "slug": "ruby-on-rails-baseball-jersey",
+                    "in_stock": true,
+                    "images": [
+                        {
+                            "id": 19,
+                            "position": 1,
+                            "alt": null,
+                            "mini_url": "/spree/products/19/mini/ror_baseball_jersey_green.png?1406650881",
+                            "small_url": "/spree/products/19/small/ror_baseball_jersey_green.png?1406650881",
+                            "medium_url": "/spree/products/19/medium/ror_baseball_jersey_green.png?1406650881",
+                            "product_url": "/spree/products/19/product/ror_baseball_jersey_green.png?1406650881",
+                            "large_url": "/spree/products/19/large/ror_baseball_jersey_green.png?1406650881",
+                            "original_url": "/spree/products/19/original/ror_baseball_jersey_green.png?1406650881"
+                        },
+                        {
+                            "id": 20,
+                            "position": 2,
+                            "alt": null,
+                            "mini_url": "/spree/products/20/mini/ror_baseball_jersey_back_green.png?1406650882",
+                            "small_url": "/spree/products/20/small/ror_baseball_jersey_back_green.png?1406650882",
+                            "medium_url": "/spree/products/20/medium/ror_baseball_jersey_back_green.png?1406650882",
+                            "product_url": "/spree/products/20/product/ror_baseball_jersey_back_green.png?1406650882",
+                            "large_url": "/spree/products/20/large/ror_baseball_jersey_back_green.png?1406650882",
+                            "original_url": "/spree/products/20/original/ror_baseball_jersey_back_green.png?1406650882"
+                        }
+                    ],
+                    "option_values": [
+                        {
+                            "id": 4,
+                            "position": 4,
+                            "name": "Extra Large",
+                            "presentation": "XL",
+                            "option_type_id": 1,
+                            "created_at": "2014-07-29T16:20:44.327Z",
+                            "updated_at": "2014-07-29T16:20:44.327Z",
+                            "image_file_name": null,
+                            "image_content_type": null,
+                            "image_file_size": null,
+                            "image_updated_at": null,
+                            "ar_association_key_name": "26"
+                        },
+                        {
+                            "id": 6,
+                            "position": 2,
+                            "name": "Green",
+                            "presentation": "Green",
+                            "option_type_id": 2,
+                            "created_at": "2014-07-29T16:20:44.342Z",
+                            "updated_at": "2014-07-29T16:20:44.342Z",
+                            "image_file_name": null,
+                            "image_content_type": null,
+                            "image_file_size": null,
+                            "image_updated_at": null,
+                            "ar_association_key_name": "19"
+                        }
+                    ],
+                    "$type": "Variant:#Foundationall"
+                }
+            ],
+            "product_properties": [
+                {
+                    "id": 1,
+                    "name": "Manufacturer",
+                    "value": "Wilson",
+                    "$type": "ProductProperty:#Foundationall"
+                },
+                {
+                    "id": 2,
+                    "name": "Brand",
+                    "value": "Wannabe Sports",
+                    "$type": "ProductProperty:#Foundationall"
+                },
+                {
+                    "id": 3,
+                    "name": "Model",
+                    "value": "JK1002",
+                    "$type": "ProductProperty:#Foundationall"
+                },
+                {
+                    "id": 4,
+                    "name": "Shirt Type",
+                    "value": "Baseball Jersey",
+                    "$type": "ProductProperty:#Foundationall"
+                },
+                {
+                    "id": 5,
+                    "name": "Sleeve Type",
+                    "value": "Long",
+                    "$type": "ProductProperty:#Foundationall"
+                },
+                {
+                    "id": 6,
+                    "name": "Made from",
+                    "value": "100% cotton",
+                    "$type": "ProductProperty:#Foundationall"
+                },
+                {
+                    "id": 7,
+                    "name": "Fit",
+                    "value": "Loose",
+                    "$type": "ProductProperty:#Foundationall"
+                },
+                {
+                    "id": 8,
+                    "name": "Gender",
+                    "value": "Men's",
+                    "$type": "ProductProperty:#Foundationall"
+                }
+            ],
+            "option_types": [
+                {
+                    "id": 1,
+                    "name": "tshirt-size",
+                    "presentation": "Size",
+                    "position": 1,
+                    "option_values": [
+                        {
+                            "id": 1,
+                            "position": 1,
+                            "name": "Small",
+                            "presentation": "S",
+                            "option_type_id": 1,
+                            "created_at": "2014-07-29T16:20:44.291Z",
+                            "updated_at": "2014-07-29T16:20:44.291Z",
+                            "image_file_name": null,
+                            "image_content_type": null,
+                            "image_file_size": null,
+                            "image_updated_at": null
+                        },
+                        {
+                            "id": 2,
+                            "position": 2,
+                            "name": "Medium",
+                            "presentation": "M",
+                            "option_type_id": 1,
+                            "created_at": "2014-07-29T16:20:44.313Z",
+                            "updated_at": "2014-07-29T16:20:44.313Z",
+                            "image_file_name": null,
+                            "image_content_type": null,
+                            "image_file_size": null,
+                            "image_updated_at": null
+                        },
+                        {
+                            "id": 3,
+                            "position": 3,
+                            "name": "Large",
+                            "presentation": "L",
+                            "option_type_id": 1,
+                            "created_at": "2014-07-29T16:20:44.320Z",
+                            "updated_at": "2014-07-29T16:20:44.320Z",
+                            "image_file_name": null,
+                            "image_content_type": null,
+                            "image_file_size": null,
+                            "image_updated_at": null
+                        },
+                        {
+                            "id": 4,
+                            "position": 4,
+                            "name": "Extra Large",
+                            "presentation": "XL",
+                            "option_type_id": 1,
+                            "created_at": "2014-07-29T16:20:44.327Z",
+                            "updated_at": "2014-07-29T16:20:44.327Z",
+                            "image_file_name": null,
+                            "image_content_type": null,
+                            "image_file_size": null,
+                            "image_updated_at": null
+                        }
+                    ],
+                    "$type": "OptionType:#Foundationall"
+                },
+                {
+                    "id": 2,
+                    "name": "tshirt-color",
+                    "presentation": "Color",
+                    "position": 2,
+                    "option_values": [
+                        {
+                            "id": 5,
+                            "position": 1,
+                            "name": "Red",
+                            "presentation": "Red",
+                            "option_type_id": 2,
+                            "created_at": "2014-07-29T16:20:44.334Z",
+                            "updated_at": "2014-07-29T16:20:44.334Z",
+                            "image_file_name": null,
+                            "image_content_type": null,
+                            "image_file_size": null,
+                            "image_updated_at": null
+                        },
+                        {
+                            "id": 6,
+                            "position": 2,
+                            "name": "Green",
+                            "presentation": "Green",
+                            "option_type_id": 2,
+                            "created_at": "2014-07-29T16:20:44.342Z",
+                            "updated_at": "2014-07-29T16:20:44.342Z",
+                            "image_file_name": null,
+                            "image_content_type": null,
+                            "image_file_size": null,
+                            "image_updated_at": null
+                        },
+                        {
+                            "id": 7,
+                            "position": 3,
+                            "name": "Blue",
+                            "presentation": "Blue",
+                            "option_type_id": 2,
+                            "created_at": "2014-07-29T16:20:44.350Z",
+                            "updated_at": "2014-07-29T16:20:44.350Z",
+                            "image_file_name": null,
+                            "image_content_type": null,
+                            "image_file_size": null,
+                            "image_updated_at": null
+                        }
+                    ],
+                    "$type": "OptionType:#Foundationall"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Ruby on Rails Jr. Spaghetti",
+            "brand": "Rails",
+            "price": 19.99,
+            "taxons": [
+                "Shirts",
+                "Rails"
+            ],
+            "taxon_ids": [
+                85,
+                90
+            ],
+            "similar_products_ids": null,
+            "description": "Officia et at enim. Dolor dolorum totam magnam. Minima perferendis voluptatum eos ab esse et et quis.",
+            "slug": "ruby-on-rails-jr-spaghetti",
+            "master": {
+                "id": 4,
+                "is_master": true,
+                "options_text": "",
+                "sku": "ROR-00013",
+                "position": 1,
+                "price": "19.99",
+                "slug": "ruby-on-rails-jr-spaghetti",
+                "in_stock": true,
+                "images": [
+                    {
+                        "id": 26,
+                        "position": 1,
+                        "alt": null,
+                        "mini_url": "/spree/products/26/mini/ror_jr_spaghetti.jpeg?1406650888",
+                        "small_url": "/spree/products/26/small/ror_jr_spaghetti.jpeg?1406650888",
+                        "medium_url": "/spree/products/26/medium/ror_jr_spaghetti.jpeg?1406650888",
+                        "product_url": "/spree/products/26/product/ror_jr_spaghetti.jpeg?1406650888",
+                        "large_url": "/spree/products/26/large/ror_jr_spaghetti.jpeg?1406650888",
+                        "original_url": "/spree/products/26/original/ror_jr_spaghetti.jpeg?1406650888"
+                    }
+                ],
+                "option_values": []
+            },
+            "variants": [],
+            "product_properties": [
+                {
+                    "id": 9,
+                    "name": "Manufacturer",
+                    "value": "Jerseys",
+                    "$type": "ProductProperty:#Foundationall"
+                },
+                {
+                    "id": 10,
+                    "name": "Brand",
+                    "value": "Resiliance",
+                    "$type": "ProductProperty:#Foundationall"
+                },
+                {
+                    "id": 11,
+                    "name": "Model",
+                    "value": "TL174",
+                    "$type": "ProductProperty:#Foundationall"
+                },
+                {
+                    "id": 12,
+                    "name": "Shirt Type",
+                    "value": "Jr. Spaghetti T",
+                    "$type": "ProductProperty:#Foundationall"
+                },
+                {
+                    "id": 13,
+                    "name": "Sleeve Type",
+                    "value": "None",
+                    "$type": "ProductProperty:#Foundationall"
+                },
+                {
+                    "id": 14,
+                    "name": "Made from",
+                    "value": "90% Cotton, 10% Nylon",
+                    "$type": "ProductProperty:#Foundationall"
+                },
+                {
+                    "id": 15,
+                    "name": "Fit",
+                    "value": "Form",
+                    "$type": "ProductProperty:#Foundationall"
+                },
+                {
+                    "id": 16,
+                    "name": "Gender",
+                    "value": "Women's",
+                    "$type": "ProductProperty:#Foundationall"
+                }
+            ],
+            "option_types": []
+        },
+        {
+            "id": 5,
+            "name": "Ruby on Rails Ringer T-Shirt",
+            "brand": "Rails",
+            "price": 19.99,
+            "taxons": [
+                "T-Shirts",
+                "Rails"
+            ],
+            "taxon_ids": [
+                86,
+                90
+            ],
+            "similar_products_ids": null,
+            "description": "Officia et at enim. Dolor dolorum totam magnam. Minima perferendis voluptatum eos ab esse et et quis.",
+            "slug": "ruby-on-rails-ringer-t-shirt",
+            "master": {
+                "id": 5,
+                "is_master": true,
+                "options_text": "",
+                "sku": "ROR-00015",
+                "position": 1,
+                "price": "19.99",
+                "slug": "ruby-on-rails-ringer-t-shirt",
+                "in_stock": true,
+                "images": [
+                    {
+                        "id": 29,
+                        "position": 1,
+                        "alt": null,
+                        "mini_url": "/spree/products/29/mini/ror_ringer.jpeg?1406650891",
+                        "small_url": "/spree/products/29/small/ror_ringer.jpeg?1406650891",
+                        "medium_url": "/spree/products/29/medium/ror_ringer.jpeg?1406650891",
+                        "product_url": "/spree/products/29/product/ror_ringer.jpeg?1406650891",
+                        "large_url": "/spree/products/29/large/ror_ringer.jpeg?1406650891",
+                        "original_url": "/spree/products/29/original/ror_ringer.jpeg?1406650891"
+                    },
+                    {
+                        "id": 30,
+                        "position": 2,
+                        "alt": null,
+                        "mini_url": "/spree/products/30/mini/ror_ringer_back.jpeg?1406650892",
+                        "small_url": "/spree/products/30/small/ror_ringer_back.jpeg?1406650892",
+                        "medium_url": "/spree/products/30/medium/ror_ringer_back.jpeg?1406650892",
+                        "product_url": "/spree/products/30/product/ror_ringer_back.jpeg?1406650892",
+                        "large_url": "/spree/products/30/large/ror_ringer_back.jpeg?1406650892",
+                        "original_url": "/spree/products/30/original/ror_ringer_back.jpeg?1406650892"
+                    }
+                ],
+                "option_values": []
+            },
+            "variants": [],
+            "product_properties": [
+                {
+                    "id": 17,
+                    "name": "Manufacturer",
+                    "value": "Jerseys",
+                    "$type": "ProductProperty:#Foundationall"
+                },
+                {
+                    "id": 18,
+                    "name": "Brand",
+                    "value": "Conditioned",
+                    "$type": "ProductProperty:#Foundationall"
+                },
+                {
+                    "id": 19,
+                    "name": "Model",
+                    "value": "TL9002",
+                    "$type": "ProductProperty:#Foundationall"
+                },
+                {
+                    "id": 20,
+                    "name": "Shirt Type",
+                    "value": "Ringer T",
+                    "$type": "ProductProperty:#Foundationall"
+                },
+                {
+                    "id": 21,
+                    "name": "Sleeve Type",
+                    "value": "Short",
+                    "$type": "ProductProperty:#Foundationall"
+                },
+                {
+                    "id": 22,
+                    "name": "Made from",
+                    "value": "100% Vellum",
+                    "$type": "ProductProperty:#Foundationall"
+                },
+                {
+                    "id": 23,
+                    "name": "Fit",
+                    "value": "Loose",
+                    "$type": "ProductProperty:#Foundationall"
+                },
+                {
+                    "id": 24,
+                    "name": "Gender",
+                    "value": "Men's",
+                    "$type": "ProductProperty:#Foundationall"
+                }
+            ],
+            "option_types": []
+        },
+        {
+            "id": 6,
+            "name": "Ruby Baseball Jersey",
+            "brand": "Ruby",
+            "price": 19.99,
+            "taxons": [
+                "Ruby",
+                "T-Shirts"
+            ],
+            "taxon_ids": [
+                87,
+                86
+            ],
+            "similar_products_ids": null,
+            "description": "Officia et at enim. Dolor dolorum totam magnam. Minima perferendis voluptatum eos ab esse et et quis.",
+            "slug": "ruby-baseball-jersey",
+            "master": {
+                "id": 6,
+                "is_master": true,
+                "options_text": "",
+                "sku": "RUB-00001",
+                "position": 1,
+                "price": "19.99",
+                "slug": "ruby-baseball-jersey",
+                "in_stock": true,
+                "images": [
+                    {
+                        "id": 34,
+                        "position": 1,
+                        "alt": null,
+                        "mini_url": "/spree/products/34/mini/ruby_baseball.png?1406650897",
+                        "small_url": "/spree/products/34/small/ruby_baseball.png?1406650897",
+                        "medium_url": "/spree/products/34/medium/ruby_baseball.png?1406650897",
+                        "product_url": "/spree/products/34/product/ruby_baseball.png?1406650897",
+                        "large_url": "/spree/products/34/large/ruby_baseball.png?1406650897",
+                        "original_url": "/spree/products/34/original/ruby_baseball.png?1406650897"
+                    }
+                ],
+                "option_values": []
+            },
+            "variants": [],
+            "product_properties": [],
+            "option_types": []
+        },
+        {
+            "id": 7,
+            "name": "Apache Baseball Jersey",
+            "brand": "Apache",
+            "price": 19.99,
+            "taxons": [
+                "Apache",
+                "T-Shirts"
+            ],
+            "taxon_ids": [
+                88,
+                86
+            ],
+            "similar_products_ids": null,
+            "description": "Officia et at enim. Dolor dolorum totam magnam. Minima perferendis voluptatum eos ab esse et et quis.",
+            "slug": "apache-baseball-jersey",
+            "master": {
+                "id": 7,
+                "is_master": true,
+                "options_text": "",
+                "sku": "APC-00001",
+                "position": 1,
+                "price": "19.99",
+                "slug": "apache-baseball-jersey",
+                "in_stock": true,
+                "images": [
+                    {
+                        "id": 33,
+                        "position": 1,
+                        "alt": null,
+                        "mini_url": "/spree/products/33/mini/apache_baseball.png?1406650895",
+                        "small_url": "/spree/products/33/small/apache_baseball.png?1406650895",
+                        "medium_url": "/spree/products/33/medium/apache_baseball.png?1406650895",
+                        "product_url": "/spree/products/33/product/apache_baseball.png?1406650895",
+                        "large_url": "/spree/products/33/large/apache_baseball.png?1406650895",
+                        "original_url": "/spree/products/33/original/apache_baseball.png?1406650895"
+                    }
+                ],
+                "option_values": []
+            },
+            "variants": [],
+            "product_properties": [],
+            "option_types": []
+        },
+        {
+            "id": 8,
+            "name": "Spree Baseball Jersey",
+            "brand": "Spree",
+            "price": 19.99,
+            "taxons": [
+                "Spree",
+                "T-Shirts"
+            ],
+            "taxon_ids": [
+                89,
+                86
+            ],
+            "similar_products_ids": null,
+            "description": "Officia et at enim. Dolor dolorum totam magnam. Minima perferendis voluptatum eos ab esse et et quis.",
+            "slug": "spree-baseball-jersey",
+            "master": {
+                "id": 8,
+                "is_master": true,
+                "options_text": "",
+                "sku": "SPR-00001",
+                "position": 1,
+                "price": "19.99",
+                "slug": "spree-baseball-jersey",
+                "in_stock": true,
+                "images": [
+                    {
+                        "id": 41,
+                        "position": 1,
+                        "alt": null,
+                        "mini_url": "/spree/products/41/mini/spree_jersey.jpeg?1406650904",
+                        "small_url": "/spree/products/41/small/spree_jersey.jpeg?1406650904",
+                        "medium_url": "/spree/products/41/medium/spree_jersey.jpeg?1406650904",
+                        "product_url": "/spree/products/41/product/spree_jersey.jpeg?1406650904",
+                        "large_url": "/spree/products/41/large/spree_jersey.jpeg?1406650904",
+                        "original_url": "/spree/products/41/original/spree_jersey.jpeg?1406650904"
+                    },
+                    {
+                        "id": 42,
+                        "position": 2,
+                        "alt": null,
+                        "mini_url": "/spree/products/42/mini/spree_jersey_back.jpeg?1406650905",
+                        "small_url": "/spree/products/42/small/spree_jersey_back.jpeg?1406650905",
+                        "medium_url": "/spree/products/42/medium/spree_jersey_back.jpeg?1406650905",
+                        "product_url": "/spree/products/42/product/spree_jersey_back.jpeg?1406650905",
+                        "large_url": "/spree/products/42/large/spree_jersey_back.jpeg?1406650905",
+                        "original_url": "/spree/products/42/original/spree_jersey_back.jpeg?1406650905"
+                    }
+                ],
+                "option_values": []
+            },
+            "variants": [],
+            "product_properties": [
+                {
+                    "id": 43,
+                    "name": "Manufacturer",
+                    "value": "Wilson",
+                    "$type": "ProductProperty:#Foundationall"
+                },
+                {
+                    "id": 44,
+                    "name": "Brand",
+                    "value": "Wannabe Sports",
+                    "$type": "ProductProperty:#Foundationall"
+                },
+                {
+                    "id": 45,
+                    "name": "Model",
+                    "value": "JK1002",
+                    "$type": "ProductProperty:#Foundationall"
+                },
+                {
+                    "id": 46,
+                    "name": "Shirt Type",
+                    "value": "Baseball Jersey",
+                    "$type": "ProductProperty:#Foundationall"
+                },
+                {
+                    "id": 47,
+                    "name": "Sleeve Type",
+                    "value": "Long",
+                    "$type": "ProductProperty:#Foundationall"
+                },
+                {
+                    "id": 48,
+                    "name": "Made from",
+                    "value": "100% cotton",
+                    "$type": "ProductProperty:#Foundationall"
+                },
+                {
+                    "id": 49,
+                    "name": "Fit",
+                    "value": "Loose",
+                    "$type": "ProductProperty:#Foundationall"
+                },
+                {
+                    "id": 50,
+                    "name": "Gender",
+                    "value": "Men's",
+                    "$type": "ProductProperty:#Foundationall"
+                }
+            ],
+            "option_types": [
+                {
+                    "id": 1,
+                    "name": "tshirt-size",
+                    "presentation": "Size",
+                    "position": 1,
+                    "option_values": [
+                        {
+                            "id": 1,
+                            "position": 1,
+                            "name": "Small",
+                            "presentation": "S",
+                            "option_type_id": 1,
+                            "created_at": "2014-07-29T16:20:44.291Z",
+                            "updated_at": "2014-07-29T16:20:44.291Z",
+                            "image_file_name": null,
+                            "image_content_type": null,
+                            "image_file_size": null,
+                            "image_updated_at": null
+                        },
+                        {
+                            "id": 2,
+                            "position": 2,
+                            "name": "Medium",
+                            "presentation": "M",
+                            "option_type_id": 1,
+                            "created_at": "2014-07-29T16:20:44.313Z",
+                            "updated_at": "2014-07-29T16:20:44.313Z",
+                            "image_file_name": null,
+                            "image_content_type": null,
+                            "image_file_size": null,
+                            "image_updated_at": null
+                        },
+                        {
+                            "id": 3,
+                            "position": 3,
+                            "name": "Large",
+                            "presentation": "L",
+                            "option_type_id": 1,
+                            "created_at": "2014-07-29T16:20:44.320Z",
+                            "updated_at": "2014-07-29T16:20:44.320Z",
+                            "image_file_name": null,
+                            "image_content_type": null,
+                            "image_file_size": null,
+                            "image_updated_at": null
+                        },
+                        {
+                            "id": 4,
+                            "position": 4,
+                            "name": "Extra Large",
+                            "presentation": "XL",
+                            "option_type_id": 1,
+                            "created_at": "2014-07-29T16:20:44.327Z",
+                            "updated_at": "2014-07-29T16:20:44.327Z",
+                            "image_file_name": null,
+                            "image_content_type": null,
+                            "image_file_size": null,
+                            "image_updated_at": null
+                        }
+                    ],
+                    "$type": "OptionType:#Foundationall"
+                },
+                {
+                    "id": 2,
+                    "name": "tshirt-color",
+                    "presentation": "Color",
+                    "position": 2,
+                    "option_values": [
+                        {
+                            "id": 5,
+                            "position": 1,
+                            "name": "Red",
+                            "presentation": "Red",
+                            "option_type_id": 2,
+                            "created_at": "2014-07-29T16:20:44.334Z",
+                            "updated_at": "2014-07-29T16:20:44.334Z",
+                            "image_file_name": null,
+                            "image_content_type": null,
+                            "image_file_size": null,
+                            "image_updated_at": null
+                        },
+                        {
+                            "id": 6,
+                            "position": 2,
+                            "name": "Green",
+                            "presentation": "Green",
+                            "option_type_id": 2,
+                            "created_at": "2014-07-29T16:20:44.342Z",
+                            "updated_at": "2014-07-29T16:20:44.342Z",
+                            "image_file_name": null,
+                            "image_content_type": null,
+                            "image_file_size": null,
+                            "image_updated_at": null
+                        },
+                        {
+                            "id": 7,
+                            "position": 3,
+                            "name": "Blue",
+                            "presentation": "Blue",
+                            "option_type_id": 2,
+                            "created_at": "2014-07-29T16:20:44.350Z",
+                            "updated_at": "2014-07-29T16:20:44.350Z",
+                            "image_file_name": null,
+                            "image_content_type": null,
+                            "image_file_size": null,
+                            "image_updated_at": null
+                        }
+                    ],
+                    "$type": "OptionType:#Foundationall"
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "name": "Spree Jr. Spaghetti",
+            "brand": "Spree",
+            "price": 19.99,
+            "taxons": [
+                "Shirts",
+                "Spree"
+            ],
+            "taxon_ids": [
+                85,
+                89
+            ],
+            "similar_products_ids": null,
+            "description": "Officia et at enim. Dolor dolorum totam magnam. Minima perferendis voluptatum eos ab esse et et quis.",
+            "slug": "spree-jr-spaghetti",
+            "master": {
+                "id": 9,
+                "is_master": true,
+                "options_text": "",
+                "sku": "SPR-00013",
+                "position": 1,
+                "price": "19.99",
+                "slug": "spree-jr-spaghetti",
+                "in_stock": true,
+                "images": [
+                    {
+                        "id": 40,
+                        "position": 1,
+                        "alt": null,
+                        "mini_url": "/spree/products/40/mini/spree_spaghetti.jpeg?1406650903",
+                        "small_url": "/spree/products/40/small/spree_spaghetti.jpeg?1406650903",
+                        "medium_url": "/spree/products/40/medium/spree_spaghetti.jpeg?1406650903",
+                        "product_url": "/spree/products/40/product/spree_spaghetti.jpeg?1406650903",
+                        "large_url": "/spree/products/40/large/spree_spaghetti.jpeg?1406650903",
+                        "original_url": "/spree/products/40/original/spree_spaghetti.jpeg?1406650903"
+                    }
+                ],
+                "option_values": []
+            },
+            "variants": [],
+            "product_properties": [
+                {
+                    "id": 51,
+                    "name": "Manufacturer",
+                    "value": "Jerseys",
+                    "$type": "ProductProperty:#Foundationall"
+                },
+                {
+                    "id": 52,
+                    "name": "Brand",
+                    "value": "Resiliance",
+                    "$type": "ProductProperty:#Foundationall"
+                },
+                {
+                    "id": 53,
+                    "name": "Model",
+                    "value": "TL174",
+                    "$type": "ProductProperty:#Foundationall"
+                },
+                {
+                    "id": 54,
+                    "name": "Shirt Type",
+                    "value": "Jr. Spaghetti T",
+                    "$type": "ProductProperty:#Foundationall"
+                },
+                {
+                    "id": 55,
+                    "name": "Sleeve Type",
+                    "value": "None",
+                    "$type": "ProductProperty:#Foundationall"
+                },
+                {
+                    "id": 56,
+                    "name": "Made from",
+                    "value": "90% Cotton, 10% Nylon",
+                    "$type": "ProductProperty:#Foundationall"
+                },
+                {
+                    "id": 57,
+                    "name": "Fit",
+                    "value": "Form",
+                    "$type": "ProductProperty:#Foundationall"
+                },
+                {
+                    "id": 58,
+                    "name": "Gender",
+                    "value": "Women's",
+                    "$type": "ProductProperty:#Foundationall"
+                }
+            ],
+            "option_types": []
+        },
+        {
+            "id": 10,
+            "name": "Spree Ringer T-Shirt",
+            "brand": "Spree",
+            "price": 19.99,
+            "taxons": [
+                "Spree",
+                "T-Shirts"
+            ],
+            "taxon_ids": [
+                89,
+                86
+            ],
+            "similar_products_ids": null,
+            "description": "Officia et at enim. Dolor dolorum totam magnam. Minima perferendis voluptatum eos ab esse et et quis.",
+            "slug": "spree-ringer-t-shirt",
+            "master": {
+                "id": 10,
+                "is_master": true,
+                "options_text": "",
+                "sku": "SPR-00015",
+                "position": 1,
+                "price": "19.99",
+                "slug": "spree-ringer-t-shirt",
+                "in_stock": true,
+                "images": [
+                    {
+                        "id": 38,
+                        "position": 1,
+                        "alt": null,
+                        "mini_url": "/spree/products/38/mini/spree_ringer_t.jpeg?1406650901",
+                        "small_url": "/spree/products/38/small/spree_ringer_t.jpeg?1406650901",
+                        "medium_url": "/spree/products/38/medium/spree_ringer_t.jpeg?1406650901",
+                        "product_url": "/spree/products/38/product/spree_ringer_t.jpeg?1406650901",
+                        "large_url": "/spree/products/38/large/spree_ringer_t.jpeg?1406650901",
+                        "original_url": "/spree/products/38/original/spree_ringer_t.jpeg?1406650901"
+                    },
+                    {
+                        "id": 39,
+                        "position": 2,
+                        "alt": null,
+                        "mini_url": "/spree/products/39/mini/spree_ringer_t_back.jpeg?1406650902",
+                        "small_url": "/spree/products/39/small/spree_ringer_t_back.jpeg?1406650902",
+                        "medium_url": "/spree/products/39/medium/spree_ringer_t_back.jpeg?1406650902",
+                        "product_url": "/spree/products/39/product/spree_ringer_t_back.jpeg?1406650902",
+                        "large_url": "/spree/products/39/large/spree_ringer_t_back.jpeg?1406650902",
+                        "original_url": "/spree/products/39/original/spree_ringer_t_back.jpeg?1406650902"
+                    }
+                ],
+                "option_values": []
+            },
+            "variants": [],
+            "product_properties": [
+                {
+                    "id": 59,
+                    "name": "Manufacturer",
+                    "value": "Jerseys",
+                    "$type": "ProductProperty:#Foundationall"
+                },
+                {
+                    "id": 60,
+                    "name": "Brand",
+                    "value": "Conditioned",
+                    "$type": "ProductProperty:#Foundationall"
+                },
+                {
+                    "id": 61,
+                    "name": "Model",
+                    "value": "TL9002",
+                    "$type": "ProductProperty:#Foundationall"
+                },
+                {
+                    "id": 62,
+                    "name": "Shirt Type",
+                    "value": "Ringer T",
+                    "$type": "ProductProperty:#Foundationall"
+                },
+                {
+                    "id": 63,
+                    "name": "Sleeve Type",
+                    "value": "Short",
+                    "$type": "ProductProperty:#Foundationall"
+                },
+                {
+                    "id": 64,
+                    "name": "Made from",
+                    "value": "100% Vellum",
+                    "$type": "ProductProperty:#Foundationall"
+                },
+                {
+                    "id": 65,
+                    "name": "Fit",
+                    "value": "Loose",
+                    "$type": "ProductProperty:#Foundationall"
+                },
+                {
+                    "id": 66,
+                    "name": "Gender",
+                    "value": "Men's",
+                    "$type": "ProductProperty:#Foundationall"
+                }
+            ],
+            "option_types": []
+        },
+        {
+            "id": 11,
+            "name": "Spree Tote",
+            "brand": "Spree",
+            "price": 15.99,
+            "taxons": [
+                "Spree",
+                "Bags"
+            ],
+            "taxon_ids": [
+                89,
+                82
+            ],
+            "similar_products_ids": null,
+            "description": "Officia et at enim. Dolor dolorum totam magnam. Minima perferendis voluptatum eos ab esse et et quis.",
+            "slug": "spree-tote",
+            "master": {
+                "id": 11,
+                "is_master": true,
+                "options_text": "",
+                "sku": "SPR-00011",
+                "position": 1,
+                "price": "15.99",
+                "slug": "spree-tote",
+                "in_stock": true,
+                "images": [
+                    {
+                        "id": 36,
+                        "position": 1,
+                        "alt": null,
+                        "mini_url": "/spree/products/36/mini/spree_tote_front.jpeg?1406650899",
+                        "small_url": "/spree/products/36/small/spree_tote_front.jpeg?1406650899",
+                        "medium_url": "/spree/products/36/medium/spree_tote_front.jpeg?1406650899",
+                        "product_url": "/spree/products/36/product/spree_tote_front.jpeg?1406650899",
+                        "large_url": "/spree/products/36/large/spree_tote_front.jpeg?1406650899",
+                        "original_url": "/spree/products/36/original/spree_tote_front.jpeg?1406650899"
+                    },
+                    {
+                        "id": 37,
+                        "position": 2,
+                        "alt": null,
+                        "mini_url": "/spree/products/37/mini/spree_tote_back.jpeg?1406650900",
+                        "small_url": "/spree/products/37/small/spree_tote_back.jpeg?1406650900",
+                        "medium_url": "/spree/products/37/medium/spree_tote_back.jpeg?1406650900",
+                        "product_url": "/spree/products/37/product/spree_tote_back.jpeg?1406650900",
+                        "large_url": "/spree/products/37/large/spree_tote_back.jpeg?1406650900",
+                        "original_url": "/spree/products/37/original/spree_tote_back.jpeg?1406650900"
+                    }
+                ],
+                "option_values": []
+            },
+            "variants": [],
+            "product_properties": [
+                {
+                    "id": 39,
+                    "name": "Type",
+                    "value": "Tote",
+                    "$type": "ProductProperty:#Foundationall"
+                },
+                {
+                    "id": 40,
+                    "name": "Size",
+                    "value": "15\" x 18\" x 6\"",
+                    "$type": "ProductProperty:#Foundationall"
+                }
+            ],
+            "option_types": []
+        },
+        {
+            "id": 12,
+            "name": "Spree Bag",
+            "brand": "Spree",
+            "price": 22.99,
+            "taxons": [
+                "Spree",
+                "Bags"
+            ],
+            "taxon_ids": [
+                89,
+                82
+            ],
+            "similar_products_ids": null,
+            "description": "Officia et at enim. Dolor dolorum totam magnam. Minima perferendis voluptatum eos ab esse et et quis.",
+            "slug": "spree-bag",
+            "master": {
+                "id": 12,
+                "is_master": true,
+                "options_text": "",
+                "sku": "SPR-00012",
+                "position": 1,
+                "price": "22.99",
+                "slug": "spree-bag",
+                "in_stock": true,
+                "images": [
+                    {
+                        "id": 35,
+                        "position": 1,
+                        "alt": null,
+                        "mini_url": "/spree/products/35/mini/spree_bag.jpeg?1406650898",
+                        "small_url": "/spree/products/35/small/spree_bag.jpeg?1406650898",
+                        "medium_url": "/spree/products/35/medium/spree_bag.jpeg?1406650898",
+                        "product_url": "/spree/products/35/product/spree_bag.jpeg?1406650898",
+                        "large_url": "/spree/products/35/large/spree_bag.jpeg?1406650898",
+                        "original_url": "/spree/products/35/original/spree_bag.jpeg?1406650898"
+                    }
+                ],
+                "option_values": []
+            },
+            "variants": [],
+            "product_properties": [
+                {
+                    "id": 41,
+                    "name": "Type",
+                    "value": "Messenger",
+                    "$type": "ProductProperty:#Foundationall"
+                },
+                {
+                    "id": 42,
+                    "name": "Size",
+                    "value": "14 1/2\" x 12\" x 5\"",
+                    "$type": "ProductProperty:#Foundationall"
+                }
+            ],
+            "option_types": []
+        },
+        {
+            "id": 13,
+            "name": "Ruby on Rails Mug",
+            "brand": "Rails",
+            "price": 13.99,
+            "taxons": [
+                "Mugs",
+                "Rails"
+            ],
+            "taxon_ids": [
+                83,
+                90
+            ],
+            "similar_products_ids": null,
+            "description": "Officia et at enim. Dolor dolorum totam magnam. Minima perferendis voluptatum eos ab esse et et quis.",
+            "slug": "ruby-on-rails-mug",
+            "master": {
+                "id": 13,
+                "is_master": true,
+                "options_text": "",
+                "sku": "ROR-00014",
+                "position": 1,
+                "price": "13.99",
+                "slug": "ruby-on-rails-mug",
+                "in_stock": true,
+                "images": [
+                    {
+                        "id": 27,
+                        "position": 1,
+                        "alt": null,
+                        "mini_url": "/spree/products/27/mini/ror_mug.jpeg?1406650889",
+                        "small_url": "/spree/products/27/small/ror_mug.jpeg?1406650889",
+                        "medium_url": "/spree/products/27/medium/ror_mug.jpeg?1406650889",
+                        "product_url": "/spree/products/27/product/ror_mug.jpeg?1406650889",
+                        "large_url": "/spree/products/27/large/ror_mug.jpeg?1406650889",
+                        "original_url": "/spree/products/27/original/ror_mug.jpeg?1406650889"
+                    },
+                    {
+                        "id": 28,
+                        "position": 2,
+                        "alt": null,
+                        "mini_url": "/spree/products/28/mini/ror_mug_back.jpeg?1406650890",
+                        "small_url": "/spree/products/28/small/ror_mug_back.jpeg?1406650890",
+                        "medium_url": "/spree/products/28/medium/ror_mug_back.jpeg?1406650890",
+                        "product_url": "/spree/products/28/product/ror_mug_back.jpeg?1406650890",
+                        "large_url": "/spree/products/28/large/ror_mug_back.jpeg?1406650890",
+                        "original_url": "/spree/products/28/original/ror_mug_back.jpeg?1406650890"
+                    }
+                ],
+                "option_values": []
+            },
+            "variants": [],
+            "product_properties": [
+                {
+                    "id": 31,
+                    "name": "Type",
+                    "value": "Mug",
+                    "$type": "ProductProperty:#Foundationall"
+                },
+                {
+                    "id": 32,
+                    "name": "Size",
+                    "value": "4.5\" tall, 3.25\" dia.",
+                    "$type": "ProductProperty:#Foundationall"
+                }
+            ],
+            "option_types": []
+        },
+        {
+            "id": 14,
+            "name": "Ruby on Rails Stein",
+            "brand": "Rails",
+            "price": 16.99,
+            "taxons": [
+                "Mugs",
+                "Rails"
+            ],
+            "taxon_ids": [
+                83,
+                90
+            ],
+            "similar_products_ids": null,
+            "description": "Officia et at enim. Dolor dolorum totam magnam. Minima perferendis voluptatum eos ab esse et et quis.",
+            "slug": "ruby-on-rails-stein",
+            "master": {
+                "id": 14,
+                "is_master": true,
+                "options_text": "",
+                "sku": "ROR-00016",
+                "position": 1,
+                "price": "16.99",
+                "slug": "ruby-on-rails-stein",
+                "in_stock": true,
+                "images": [
+                    {
+                        "id": 31,
+                        "position": 1,
+                        "alt": null,
+                        "mini_url": "/spree/products/31/mini/ror_stein.jpeg?1406650893",
+                        "small_url": "/spree/products/31/small/ror_stein.jpeg?1406650893",
+                        "medium_url": "/spree/products/31/medium/ror_stein.jpeg?1406650893",
+                        "product_url": "/spree/products/31/product/ror_stein.jpeg?1406650893",
+                        "large_url": "/spree/products/31/large/ror_stein.jpeg?1406650893",
+                        "original_url": "/spree/products/31/original/ror_stein.jpeg?1406650893"
+                    },
+                    {
+                        "id": 32,
+                        "position": 2,
+                        "alt": null,
+                        "mini_url": "/spree/products/32/mini/ror_stein_back.jpeg?1406650894",
+                        "small_url": "/spree/products/32/small/ror_stein_back.jpeg?1406650894",
+                        "medium_url": "/spree/products/32/medium/ror_stein_back.jpeg?1406650894",
+                        "product_url": "/spree/products/32/product/ror_stein_back.jpeg?1406650894",
+                        "large_url": "/spree/products/32/large/ror_stein_back.jpeg?1406650894",
+                        "original_url": "/spree/products/32/original/ror_stein_back.jpeg?1406650894"
+                    }
+                ],
+                "option_values": []
+            },
+            "variants": [],
+            "product_properties": [
+                {
+                    "id": 33,
+                    "name": "Type",
+                    "value": "Stein",
+                    "$type": "ProductProperty:#Foundationall"
+                },
+                {
+                    "id": 34,
+                    "name": "Size",
+                    "value": "6.75\" tall, 3.75\" dia. base, 3\" dia. rim",
+                    "$type": "ProductProperty:#Foundationall"
+                }
+            ],
+            "option_types": []
+        },
+        {
+            "id": 15,
+            "name": "Spree Stein",
+            "brand": "Spree",
+            "price": 16.99,
+            "taxons": [
+                "Spree",
+                "Mugs"
+            ],
+            "taxon_ids": [
+                89,
+                83
+            ],
+            "similar_products_ids": null,
+            "description": "Officia et at enim. Dolor dolorum totam magnam. Minima perferendis voluptatum eos ab esse et et quis.",
+            "slug": "spree-stein",
+            "master": {
+                "id": 15,
+                "is_master": true,
+                "options_text": "",
+                "sku": "SPR-00016",
+                "position": 1,
+                "price": "16.99",
+                "slug": "spree-stein",
+                "in_stock": true,
+                "images": [
+                    {
+                        "id": 43,
+                        "position": 1,
+                        "alt": null,
+                        "mini_url": "/spree/products/43/mini/spree_stein.jpeg?1406650906",
+                        "small_url": "/spree/products/43/small/spree_stein.jpeg?1406650906",
+                        "medium_url": "/spree/products/43/medium/spree_stein.jpeg?1406650906",
+                        "product_url": "/spree/products/43/product/spree_stein.jpeg?1406650906",
+                        "large_url": "/spree/products/43/large/spree_stein.jpeg?1406650906",
+                        "original_url": "/spree/products/43/original/spree_stein.jpeg?1406650906"
+                    },
+                    {
+                        "id": 44,
+                        "position": 2,
+                        "alt": null,
+                        "mini_url": "/spree/products/44/mini/spree_stein_back.jpeg?1406650907",
+                        "small_url": "/spree/products/44/small/spree_stein_back.jpeg?1406650907",
+                        "medium_url": "/spree/products/44/medium/spree_stein_back.jpeg?1406650907",
+                        "product_url": "/spree/products/44/product/spree_stein_back.jpeg?1406650907",
+                        "large_url": "/spree/products/44/large/spree_stein_back.jpeg?1406650907",
+                        "original_url": "/spree/products/44/original/spree_stein_back.jpeg?1406650907"
+                    }
+                ],
+                "option_values": []
+            },
+            "variants": [],
+            "product_properties": [
+                {
+                    "id": 35,
+                    "name": "Type",
+                    "value": "Stein",
+                    "$type": "ProductProperty:#Foundationall"
+                },
+                {
+                    "id": 36,
+                    "name": "Size",
+                    "value": "6.75\" tall, 3.75\" dia. base, 3\" dia. rim",
+                    "$type": "ProductProperty:#Foundationall"
+                }
+            ],
+            "option_types": []
+        },
+        {
+            "id": 16,
+            "name": "Spree Mug",
+            "brand": "Spree",
+            "price": 13.99,
+            "taxons": [
+                "Spree",
+                "Mugs"
+            ],
+            "taxon_ids": [
+                89,
+                83
+            ],
+            "similar_products_ids": null,
+            "description": "Officia et at enim. Dolor dolorum totam magnam. Minima perferendis voluptatum eos ab esse et et quis.",
+            "slug": "spree-mug",
+            "master": {
+                "id": 16,
+                "is_master": true,
+                "options_text": "",
+                "sku": "SPR-00014",
+                "position": 1,
+                "price": "13.99",
+                "slug": "spree-mug",
+                "in_stock": true,
+                "images": [
+                    {
+                        "id": 45,
+                        "position": 1,
+                        "alt": null,
+                        "mini_url": "/spree/products/45/mini/spree_mug.jpeg?1406650908",
+                        "small_url": "/spree/products/45/small/spree_mug.jpeg?1406650908",
+                        "medium_url": "/spree/products/45/medium/spree_mug.jpeg?1406650908",
+                        "product_url": "/spree/products/45/product/spree_mug.jpeg?1406650908",
+                        "large_url": "/spree/products/45/large/spree_mug.jpeg?1406650908",
+                        "original_url": "/spree/products/45/original/spree_mug.jpeg?1406650908"
+                    },
+                    {
+                        "id": 46,
+                        "position": 2,
+                        "alt": null,
+                        "mini_url": "/spree/products/46/mini/spree_mug_back.jpeg?1406650909",
+                        "small_url": "/spree/products/46/small/spree_mug_back.jpeg?1406650909",
+                        "medium_url": "/spree/products/46/medium/spree_mug_back.jpeg?1406650909",
+                        "product_url": "/spree/products/46/product/spree_mug_back.jpeg?1406650909",
+                        "large_url": "/spree/products/46/large/spree_mug_back.jpeg?1406650909",
+                        "original_url": "/spree/products/46/original/spree_mug_back.jpeg?1406650909"
+                    }
+                ],
+                "option_values": []
+            },
+            "variants": [],
+            "product_properties": [
+                {
+                    "id": 37,
+                    "name": "Type",
+                    "value": "Mug",
+                    "$type": "ProductProperty:#Foundationall"
+                },
+                {
+                    "id": 38,
+                    "name": "Size",
+                    "value": "4.5\" tall, 3.25\" dia.",
+                    "$type": "ProductProperty:#Foundationall"
+                }
+            ],
+            "option_types": []
+        }
+    ]
+}

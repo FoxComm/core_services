@@ -1,0 +1,6 @@
+elasticsearch_host: kibana.c.foxcomm123.internal
+
+puma_enabled: true
+rails_enabled: true
+nginx_enabled: true
+environments_tag: 'production'

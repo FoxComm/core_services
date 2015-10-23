@@ -1,0 +1,2 @@
+# ssl_pem comes from the vault
+ssl_pem: '{{ vaulted_ssl_pem }}'

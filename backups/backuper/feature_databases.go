@@ -10,7 +10,7 @@ import (
 
 	"github.com/stacktic/dropbox"
 
-	"github.com/FoxComm/FoxComm/alerts"
+	"github.com/FoxComm/core_services/lib/alerts"
 	"github.com/FoxComm/libs/logger"
 	"github.com/FoxComm/core_services/feature_manager/core"
 	. "github.com/FoxComm/libs/db/masterdb"

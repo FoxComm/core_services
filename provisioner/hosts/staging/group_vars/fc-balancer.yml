@@ -1,0 +1,3 @@
+balancer_redirections: []
+#balancer_redirections:
+  #- { from: gce-staging.beautykind.us, to: 'https://testing-haproxy-conf.beautykind.us' }

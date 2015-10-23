@@ -1,0 +1,8 @@
+# For future use when we get rid of CoreOs
+- name:         FoxComm stack
+  hosts:        cluster
+  gather_facts: false
+
+  roles:
+    - { role: defunctzombie.coreos-bootstrap }
+    - { role: foxcomm }

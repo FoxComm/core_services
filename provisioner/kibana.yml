@@ -1,0 +1,8 @@
+- name:         Kibana Server
+  hosts:        kibana
+  sudo:         true
+
+  roles:
+    - { role: geerlingguy.elasticsearch }
+    - { role: geerlingguy.nginx }
+    - { role: kibana }

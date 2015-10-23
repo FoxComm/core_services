@@ -1,0 +1,34 @@
+---
+
+# Create mongodb cluster using Google Compute Engine interface
+#  - name: mongodb | add repository
+#    apt_repository: repo='deb http://downloads-distro.mongodb.org/repo/debian-sysvinit dist 10gen' update_cache=yes
+#    tags: mongodb
+#
+#  - name: mongodb | install key
+#    apt_key: id=7F0CEB10 url=http://docs.mongodb.org/10gen-gpg-key.asc
+#    tags: mongodb
+#
+#  - name: mongodb | install
+#    apt: pkg=mongodb-{{ '10gen' if old_version | bool else 'org' }} state=latest update_cache=yes
+#    ignore_errors: true
+#    tags: mongodb
+#
+#  - name: mongodb | create db directory
+#    file: dest=/data/db state=directory owner=mongodb group=mongodb
+#    tags: mongodb
+#
+#  - name: mongodb | ensure service is running
+#    service: name={{ 'mongodb' if old_version | bool else 'mongod' }} state=started
+#    tags: mongodb
+
+- include:    ../../common/tasks/newrelic-plugin-agent.yml
+
+- name:       Mongo driver
+  pip:        name='newrelic-plugin-agent[mongodb]'
+
+- name:       Copy newrelic plugin agent config file
+  sudo:       true
+  template:   src=newrelic-plugin-agent.cfg.j2
+              dest=/etc/newrelic/newrelic-plugin-agent.cfg
+- include:    ../../common/tasks/newrelic-plugin-agent-actions.yml

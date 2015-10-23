@@ -1,0 +1,6 @@
+geerlingguy.java
+geerlingguy.nginx
+geerlingguy.elasticsearch
+geerlingguy.elasticsearch-curator
+defunctzombie.coreos-bootstrap
+jnv.debian-backports

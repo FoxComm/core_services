@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 
-	"github.com/FoxComm/FoxComm/announcer"
+	"github.com/FoxComm/libs/announcer"
 	"github.com/FoxComm/FoxComm/configs"
 	"github.com/FoxComm/FoxComm/endpoints"
 	"github.com/FoxComm/core_services/router/plugins/health_check"

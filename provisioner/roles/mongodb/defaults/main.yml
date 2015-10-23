@@ -1,0 +1,3 @@
+---
+version: 2.6
+old_version: "{{ version | version_compare('2.6', '<') }}"

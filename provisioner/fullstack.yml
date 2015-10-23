@@ -1,0 +1,37 @@
+---
+- name: Common tasks for Hosts
+  hosts:
+    - fcdb
+    - mongodb
+    - balancer
+  roles:
+    - common
+
+- name:  FC Databases
+  hosts: fcdb
+  roles:
+    - { role: postgresql, sudo: yes }
+  tags:
+    - fcdb
+
+# TODO: GCE was provisioned through UI Wizard
+#- name: FC MongoDB Central DB
+  #hosts: mongodb
+  #sudo: yes
+  #pre_tasks:
+    #- name: mongodb | install requirements
+      #apt: pkg=python-pycurl state=latest update_cache=yes
+      #tags: mongodb
+  #roles:
+    #- mongodb
+  #tags:
+    #- mongodb
+
+- name: FC HAProxy Balancer
+  hosts: fc-balancer
+  gather_facts: true
+  sudo: true
+  roles:
+      - balancer
+  tags:
+    - balancer

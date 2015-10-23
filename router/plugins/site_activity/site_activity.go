@@ -11,9 +11,9 @@ import (
 	"time"
 
 	"github.com/FoxComm/libs/logger"
-	"github.com/FoxComm/FoxComm/models"
-	"github.com/FoxComm/FoxComm/repositories"
 	"github.com/FoxComm/core_services/router/common"
+	"github.com/FoxComm/core_services/router/models"
+	"github.com/FoxComm/core_services/router/repositories"
 	netutils "github.com/FoxComm/core_services/router/netutils"
 	"github.com/FoxComm/libs/utils"
 	"github.com/jmcvetta/napping"

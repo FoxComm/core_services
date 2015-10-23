@@ -1,3 +1,5 @@
+catalog_cache/catalog_cache
+catalog_cache/tmp/
 router/router
 user/user
 user/tmp/
@@ -6,3 +8,6 @@ feature_manager/feature_manager
 ui/bower_components/
 ui/node_modules/
 backups/backups
+deployer/deployer
+bin/*
+deployer/fleet-backup/
