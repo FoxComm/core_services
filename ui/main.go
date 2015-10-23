@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"net/url"
 
-	"github.com/FoxComm/FoxComm/announcer"
+	"github.com/FoxComm/libs/announcer"
 	"github.com/FoxComm/FoxComm/configs"
 	"github.com/FoxComm/FoxComm/endpoints"
 	"github.com/FoxComm/libs/logger"

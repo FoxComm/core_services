@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/FoxComm/FoxComm/announcer"
+	"github.com/FoxComm/libs/announcer"
 	"github.com/FoxComm/core_services/catalog_cache/controllers"
 	"github.com/FoxComm/FoxComm/configs"
 	"github.com/FoxComm/FoxComm/endpoints"
