@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/FoxComm/FoxComm/configs"
+	"github.com/FoxComm/libs/configs"
 )
 
 type SimpleCodeHandler struct {

@@ -9,7 +9,7 @@ import (
 	"github.com/stacktic/dropbox"
 
 	"github.com/FoxComm/core_services/lib/alerts"
-	"github.com/FoxComm/FoxComm/configs"
+	"github.com/FoxComm/libs/configs"
 	"github.com/FoxComm/libs/logger"
 )
 
