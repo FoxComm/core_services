@@ -6,7 +6,7 @@ import (
 	"os"
 
 	"github.com/FoxComm/libs/announcer"
-	"github.com/FoxComm/FoxComm/configs"
+	"github.com/FoxComm/libs/configs"
 	"github.com/FoxComm/FoxComm/endpoints"
 	"github.com/FoxComm/core_services/router/common"
 	"github.com/FoxComm/core_services/router/netutils"

@@ -13,7 +13,7 @@ import (
 	"github.com/qor/qor/resource"
 
 	"github.com/FoxComm/core_services/catalog_cache/lib/qor/catalog"
-	"github.com/FoxComm/FoxComm/configs"
+	"github.com/FoxComm/libs/configs"
 	"github.com/FoxComm/libs/logger"
 )
 

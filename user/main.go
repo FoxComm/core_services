@@ -4,7 +4,7 @@ import (
 	"log"
 
 	"github.com/FoxComm/libs/announcer"
-	"github.com/FoxComm/FoxComm/configs"
+	"github.com/FoxComm/libs/configs"
 	"github.com/FoxComm/FoxComm/endpoints"
 	"github.com/FoxComm/core_services/router/plugins/health_check"
 	"github.com/FoxComm/core_services/user/controllers"

@@ -3,7 +3,7 @@ package controllers
 import (
 	"net/http"
 
-	"github.com/FoxComm/FoxComm/configs"
+	"github.com/FoxComm/libs/configs"
 	"github.com/FoxComm/core_services/user/service"
 	"github.com/gin-gonic/gin"
 )

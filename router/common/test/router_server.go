@@ -9,7 +9,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/FoxComm/FoxComm/configs"
+	"github.com/FoxComm/libs/configs"
 	"github.com/FoxComm/FoxComm/feature_manager/core"
 	"github.com/FoxComm/FoxComm/router/registry"
 	"github.com/FoxComm/vulcand/engine"
