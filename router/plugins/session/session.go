@@ -8,8 +8,8 @@ import (
 
 	"github.com/FoxComm/FoxComm/endpoints"
 	"github.com/FoxComm/libs/logger"
-	"github.com/FoxComm/FoxComm/models"
 	"github.com/FoxComm/core_services/router/common"
+	"github.com/FoxComm/core_services/router/models"
 	"github.com/FoxComm/libs/db/db_switcher"
 	"github.com/gorilla/securecookie"
 	"github.com/gorilla/sessions"
