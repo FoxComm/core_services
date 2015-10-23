@@ -2,6 +2,7 @@ router/router
 user/user
 user/tmp/
 ui/ui
+feature_manager/feature_manager
 ui/bower_components/
 ui/node_modules/
 backups/backups
