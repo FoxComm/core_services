@@ -4,7 +4,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/FoxComm/FoxComm/etcd_client"
+	"github.com/FoxComm/libs/etcd_client"
 	"github.com/FoxComm/core_services/feature_manager/core"
 	. "github.com/FoxComm/libs/db/masterdb"
 	"github.com/gin-gonic/gin"
