@@ -3,7 +3,7 @@ package feature_validator
 import (
 	"net/http"
 
-	"github.com/FoxComm/FoxComm/endpoints"
+	"github.com/FoxComm/libs/endpoints"
 	"github.com/FoxComm/libs/logger"
 	"github.com/FoxComm/vulcand/Godeps/_workspace/src/github.com/codegangsta/cli"
 	"github.com/FoxComm/vulcand/engine"

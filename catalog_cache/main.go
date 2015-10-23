@@ -4,7 +4,7 @@ import (
 	"github.com/FoxComm/libs/announcer"
 	"github.com/FoxComm/core_services/catalog_cache/controllers"
 	"github.com/FoxComm/libs/configs"
-	"github.com/FoxComm/FoxComm/endpoints"
+	"github.com/FoxComm/libs/endpoints"
 	"github.com/FoxComm/libs/logger"
 	"github.com/FoxComm/core_services/router/plugins/health_check"
 	"github.com/gin-gonic/gin"
