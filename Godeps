@@ -12,4 +12,4 @@ github.com/FoxComm/libs/spree 45202baa7d7008b60fd644532aa259e8a9672e14
 github.com/kidstuff/mongostore 238d10551ec8da978f2ea7d6657ba1b47a828fdf
 github.com/mailgun/oxy/utils 988bfa0d106d2d52ffeb12a0396238e50a7fff41
 github.com/FoxComm/vulcand 7b8bf0e744abc0065eaec74fcfe1b5e760a68613
-
+github.com/sirupsen/logrus v0.8.7
