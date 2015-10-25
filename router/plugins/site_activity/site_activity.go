@@ -10,11 +10,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/FoxComm/libs/logger"
 	"github.com/FoxComm/core_services/router/common"
 	"github.com/FoxComm/core_services/router/models"
-	"github.com/FoxComm/core_services/router/repositories"
 	netutils "github.com/FoxComm/core_services/router/netutils"
+	"github.com/FoxComm/core_services/router/repositories"
+	"github.com/FoxComm/libs/logger"
 	"github.com/FoxComm/libs/utils"
 	"github.com/jmcvetta/napping"
 	oxyutils "github.com/mailgun/oxy/utils"
@@ -82,8 +82,7 @@ func NewHistoryWriter(req *http.Request, cookies []*http.Cookie, respBytes []byt
 
 func (hw *HistoryWriter) CreateSiteActivity(action models.SiteAction) {
 	r := hw.Request
-	storeID := common.StoreID(r)
-	sArepo, err := repositories.NewSiteActivityRepoWithStoreId(storeID)
+	sArepo, err := repositories.NewSiteActivityRepoForFeature()
 	if err != nil {
 		logger.Error("[SiteActivity] Can't connect to db store: %v\nAction %+v skipped", err, action)
 		return
