@@ -7,7 +7,7 @@ import (
 	"github.com/FoxComm/libs/endpoints"
 	"github.com/FoxComm/libs/logger"
 	"github.com/FoxComm/core_services/router/plugins/health_check"
-	"github.com/FoxComm/libs/Godeps/_workspace/src/github.com/gin-gonic/gin"
+	"github.com/gin-gonic/gin"
 )
 
 func main() {
