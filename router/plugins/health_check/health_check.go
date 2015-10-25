@@ -10,7 +10,7 @@ import (
 
 	"github.com/FoxComm/core_services/router/netutils"
 
-	"github.com/FoxComm/libs/Godeps/_workspace/src/github.com/gin-gonic/gin"
+	"github.com/gin-gonic/gin"
 	_ "github.com/FoxComm/libs/utils/ssl"
 	"github.com/FoxComm/vulcand/engine"
 )
