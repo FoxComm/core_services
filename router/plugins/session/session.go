@@ -6,11 +6,10 @@ import (
 	"encoding/gob"
 	"net/http"
 
-	"github.com/FoxComm/libs/endpoints"
-	"github.com/FoxComm/libs/logger"
 	"github.com/FoxComm/core_services/router/common"
 	"github.com/FoxComm/core_services/router/models"
 	"github.com/FoxComm/libs/db/db_switcher"
+	"github.com/FoxComm/libs/logger"
 	"github.com/gorilla/securecookie"
 	"github.com/gorilla/sessions"
 	"github.com/kidstuff/mongostore"
@@ -47,7 +46,7 @@ func (s *SessionMiddleware) ServeHTTP(rw http.ResponseWriter, httpReq *http.Requ
 	}
 
 	mongo := &db_switcher.Mongo{}
-	err := mongo.InitializeWithStoreID(common.StoreID(httpReq), "sessions", endpoints.SocialAnalyticsAPI)
+	err := mongo.InitializeForFeature("sessions", "social_analytics")
 	if err != nil {
 		logger.Error("[session] Can't connect to db_store: %s", err.Error())
 		return

@@ -5,7 +5,6 @@ import (
 
 	"gopkg.in/mgo.v2/bson"
 
-	"github.com/FoxComm/libs/endpoints"
 	"github.com/FoxComm/libs/db/db_switcher"
 )
 
@@ -22,9 +21,9 @@ func NewSiteActivityRepo(request *http.Request) (*SiteActivityRepo, error) {
 	return &repo, err
 }
 
-func NewSiteActivityRepoWithStoreId(storeID int) (*SiteActivityRepo, error) {
+func NewSiteActivityRepoForFeature() (*SiteActivityRepo, error) {
 	var repo SiteActivityRepo
-	err := repo.InitializeWithStoreID(storeID, SiteActivityCollection, endpoints.SocialAnalyticsAPI)
+	err := repo.InitializeForFeature(SiteActivityCollection, "social_analytics")
 	return &repo, err
 }
 

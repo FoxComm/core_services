@@ -2,8 +2,8 @@ package controllers
 
 import (
 	"github.com/FoxComm/core_services/catalog_cache/models"
-	"github.com/FoxComm/libs/utils"
 	"github.com/gin-gonic/gin"
+	"github.com/FoxComm/libs/utils"
 
 	"net/http"
 	"net/url"
