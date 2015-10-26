@@ -1,0 +1,7 @@
+[[site-actions]]
+name = "signup"
+path = "/app/signup.js"
+httpMethod = "POST"
+statusCode = 200
+
+
